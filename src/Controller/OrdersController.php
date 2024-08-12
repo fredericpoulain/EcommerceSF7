@@ -61,7 +61,7 @@ class OrdersController extends AbstractController
 
         //***********************************************************************************************************
         $this->addFlash('infoMessageFlash', "Site de démonstration ! Les achats sont désactivés");
-        return $this->redirectToRoute('app_addresses');
+        return $this->redirectToRoute('app_cart_index');
         //***********************************************************************************************************
 
         $secretKeyStripe = $this->getParameter('app.secreteKeyStripe');
