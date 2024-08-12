@@ -1,0 +1,1033 @@
+pc-tour:
+  - nom: "PC Gamer sur mesure"
+    description: "Un PC gamer puissant et personnalisable, idéal pour les joueurs exigeants"
+    prix: 250000
+    stock: 10
+    slug: "pc-gamer-sur-mesure"
+  - nom: "PC de bureau gamer"
+    description: "Un PC gamer performant et abordable, idéal pour les joueurs occasionnels"
+    prix: 150000
+    stock: 20
+    slug: "pc-de-bureau-gamer"
+  - nom: "PC de bureau professionnel"
+    description: "Un PC de bureau puissant et fiable, idéal pour les professionnels"
+    prix: 300000
+    stock: 5
+    slug: "pc-de-bureau-professionnel"
+  - nom: "PC Gamer portable"
+    description: "Un PC gamer puissant et compact, idéal pour les joueurs nomades"
+    prix: 200000
+    stock: 15
+    slug: "pc-gamer-portable"
+  - nom: "PC de bureau gaming all-in-one"
+    description: "Un PC gamer compact et élégant, tout-en-un"
+    prix: 170000
+    stock: 25
+    slug: "pc-de-bureau-gaming-all-in-one"
+  - nom: "PC de bureau gaming mini"
+    description: "Un PC gamer compact et silencieux, idéal pour les petits espaces"
+    prix: 120000
+    stock: 30
+    slug: "pc-de-bureau-gaming-mini"
+  - nom: "PC de bureau gaming pour VR"
+    description: "Un PC gamer puissant et compatible avec la réalité virtuelle"
+    prix: 270000
+    stock: 10
+    slug: "pc-de-bureau-gaming-vr"
+  - nom: "PC de bureau gaming streaming"
+    description: "Un PC gamer puissant et adapté au streaming"
+    prix: 350000
+    stock: 5
+    slug: "pc-de-bureau-gaming-streaming"
+  - nom: "PC de bureau gaming personnalisable"
+    description: "Un PC gamer entièrement personnalisable, selon vos besoins et votre budget"
+    prix: 150000
+    stock: 10
+    slug: "pc-de-bureau-gaming-personnalisable"
+  - nom: "PC de bureau gaming haut de gamme"
+    description: "Un PC gamer puissant et ultra-performant, pour les joueurs les plus exigeants"
+    prix: 400000
+    stock: 5
+    slug: "pc-de-bureau-gaming-haut-de-gamme"
+  - nom: "PC de bureau gaming rétro"
+    description: "Un PC gamer au design vintage, pour les nostalgiques"
+    prix: 150000
+    stock: 20
+    slug: "pc-de-bureau-gaming-retro"
+pc-portable-gamer:
+  - nom: "PC portable gamer ultraportable"
+    description: "Un PC portable gamer puissant et fin, idéal pour les joueurs nomades"
+    prix: 200000
+    stock: 15
+    slug: "pc-portable-gamer-ultraportable"
+  - nom: "PC portable gamer performant"
+    description: "Un PC portable gamer puissant et abordable, idéal pour les joueurs occasionnels"
+    prix: 120000
+    stock: 25
+    slug: "pc-portable-gamer-performant"
+  - nom: "PC portable gamer polyvalent"
+    description: "Un PC portable gamer puissant et polyvalent, idéal pour les joueurs et les professionnels"
+    prix: 170000
+    stock: 10
+    slug: "pc-portable-gamer-polyvalent"
+  - nom: "PC portable gamer haut de gamme"
+    description: "Le meilleur PC portable gamer avec des performances exceptionnelles"
+    prix: 250000
+    stock: 8
+    slug: "pc-portable-gamer-haut-de-gamme"
+  - nom: "PC portable gamer abordable"
+    description: "Un PC portable gamer de qualité à un prix abordable"
+    prix: 90000
+    stock: 20
+    slug: "pc-portable-gamer-abordable"
+  - nom: "PC portable gamer 15 pouces"
+    description: "Un PC portable gamer avec un écran de 15 pouces pour une expérience immersive"
+    prix: 140000
+    stock: 12
+    slug: "pc-portable-gamer-15-pouces"
+  - nom: "PC portable gamer 17 pouces"
+    description: "Un PC portable gamer avec un écran de 17 pouces pour une expérience ultime"
+    prix: 180000
+    stock: 7
+    slug: "pc-portable-gamer-17-pouces"
+  - nom: "PC portable gamer rétro-éclairé"
+    description: "Un PC portable gamer avec un clavier rétro-éclairé pour jouer dans le noir"
+    prix: 160000
+    stock: 9
+    slug: "pc-portable-gamer-retro-eclaire"
+  - nom: "PC portable gamer silencieux"
+    description: "Un PC portable gamer avec un système de refroidissement silencieux"
+    prix: 190000
+    stock: 6
+    slug: "pc-portable-gamer-silencieux"
+  - nom: "PC portable gamer économe en énergie"
+    description: "Un PC portable gamer avec une excellente efficacité énergétique"
+    prix: 130050
+    stock: 11
+    slug: "pc-portable-gamer-econome-en-energie"
+  - nom: "PC portable gamer VR-ready"
+    description: "Un PC portable gamer prêt pour la réalité virtuelle"
+    prix: 220000
+    stock: 5
+    slug: "pc-portable-gamer-vr-ready"
+Portable Mac:
+  - nom: "MacBook Air 13 pouces"
+    description: "Un portable Mac léger et performant, idéal pour la mobilité"
+    prix: 120000
+    stock: 20
+    slug: "macbook-air-13-pouces"
+  - nom: "MacBook Pro 16 pouces"
+    description: "Un portable Mac puissant avec un grand écran, idéal pour les professionnels"
+    prix: 250000
+    stock: 15
+    slug: "macbook-pro-16-pouces"
+  - nom: "MacBook Pro 14 pouces"
+    description: "Un portable Mac polyvalent avec un écran de haute qualité"
+    prix: 200000
+    stock: 18
+    slug: "macbook-pro-14-pouces"
+  - nom: "MacBook Air 11 pouces"
+    description: "Un portable Mac compact pour une utilisation quotidienne"
+    prix: 100000
+    stock: 22
+    slug: "macbook-air-11-pouces"
+  - nom: "iMac 27 pouces"
+    description: "Un ordinateur de bureau Mac avec un écran retina époustouflant"
+    prix: 300000
+    stock: 10
+    slug: "imac-27-pouces"
+  - nom: "Mac Mini"
+    description: "Un ordinateur Mac compact et puissant pour une utilisation polyvalente"
+    prix: 150000
+    stock: 12
+    slug: "mac-mini"
+  - nom: "Mac Pro"
+    description: "Un ordinateur Mac professionnel haut de gamme pour les tâches exigeantes"
+    prix: 500000
+    stock: 8
+    slug: "mac-pro"
+  - nom: "MacBook 12 pouces"
+    description: "Un portable Mac élégant et léger pour la mobilité"
+    prix: 180000
+    stock: 14
+    slug: "macbook-12-pouces"
+  - nom: "MacBook Air M1"
+    description: "Le dernier MacBook Air équipé de la puce M1 pour des performances exceptionnelles"
+    prix: 140000
+    stock: 16
+    slug: "macbook-air-m1"
+  - nom: "MacBook Pro M1"
+    description: "Le dernier MacBook Pro équipé de la puce M1 pour des performances professionnelles"
+    prix: 220000
+    stock: 20
+    slug: "macbook-pro-m1"
+sacoche-portable:
+  - nom: "Sacoche ordinateur portable en cuir"
+    description: "Une sacoche ordinateur portable élégante et durable, en cuir véritable"
+    prix: 5000
+    stock: 25
+    slug: "sacoche-ordinateur-portable-en-cuir"
+  - nom: "Sacoche ordinateur portable en toile"
+    description: "Une sacoche ordinateur portable pratique et résistante, en toile de haute qualité"
+    prix: 3000
+    stock: 30
+    slug: "sacoche-ordinateur-portable-en-toile"
+  - nom: "Sacoche ordinateur portable en nylon"
+    description: "Une sacoche ordinateur portable robuste et imperméable, en nylon de haute qualité"
+    prix: 4000
+    stock: 20
+    slug: "sacoche-ordinateur-portable-en-nylon"
+  - nom: "Sacoche ordinateur portable légère"
+    description: "Une sacoche légère et compacte pour transporter votre ordinateur en toute simplicité"
+    prix: 2500
+    stock: 40
+    slug: "sacoche-ordinateur-portable-legere"
+  - nom: "Sacoche ordinateur portable de designer"
+    description: "Une sacoche de créateur pour ordinateur portable avec un design exclusif"
+    prix: 8000
+    stock: 15
+    slug: "sacoche-ordinateur-portable-designer"
+  - nom: "Sacoche ordinateur portable anti-choc"
+    description: "Une sacoche résistante aux chocs pour protéger votre ordinateur en déplacement"
+    prix: 4500
+    stock: 18
+    slug: "sacoche-ordinateur-portable-anti-choc"
+  - nom: "Sacoche ordinateur portable élégante"
+    description: "Une sacoche élégante pour ordinateur portable avec une finition haut de gamme"
+    prix: 6000
+    stock: 12
+    slug: "sacoche-ordinateur-portable-elegante"
+  - nom: "Sacoche ordinateur portable de voyage"
+    description: "Une sacoche de voyage spacieuse pour transporter votre ordinateur et vos accessoires"
+    prix: 5500
+    stock: 22
+    slug: "sacoche-ordinateur-portable-voyage"
+  - nom: "Sacoche ordinateur portable étanche"
+    description: "Une sacoche étanche pour protéger votre ordinateur des intempéries"
+    prix: 3500
+    stock: 28
+    slug: "sacoche-ordinateur-portable-etanche"
+  - nom: "Sacoche ordinateur portable de luxe"
+    description: "Une sacoche de luxe pour ordinateur portable en cuir de qualité supérieure"
+    prix: 12000
+    stock: 8
+    slug: "sacoche-ordinateur-portable-luxe"
+tablette:
+  - nom: "Tablette iPad Pro 12,9 pouces"
+    description: "Une tablette puissante et polyvalente, idéale pour le travail et le divertissement"
+    prix: 150000
+    stock: 20
+    slug: "tablette-ipad-pro-12-9-pouces"
+  - nom: "Tablette Samsung Galaxy Tab S8"
+    description: "Une tablette puissante et abordable, idéale pour les étudiants et les professionnels"
+    prix: 100000
+    stock: 30
+    slug: "tablette-samsung-galaxy-tab-s8"
+  - nom: "Tablette Huawei MatePad Pro 12,6 pouces"
+    description: "Une tablette puissante et élégante, idéale pour les créateurs de contenu"
+    prix: 120000
+    stock: 15
+    slug: "tablette-huawei-matepad-pro-12-6-pouces"
+  - nom: "Tablette Microsoft Surface Pro 8"
+    description: "Une tablette Windows polyvalente avec des performances exceptionnelles"
+    prix: 130000
+    stock: 25
+    slug: "tablette-microsoft-surface-pro-8"
+  - nom: "Tablette Lenovo Tab P11"
+    description: "Une tablette Android abordable pour la navigation et le divertissement"
+    prix: 60000
+    stock: 35
+    slug: "tablette-lenovo-tab-p11"
+  - nom: "Tablette Amazon Fire HD 10"
+    description: "Une tablette économique pour les loisirs numériques et la lecture"
+    prix: 25000
+    stock: 50
+    slug: "tablette-amazon-fire-hd-10"
+  - nom: "Tablette Google Pixel Slate"
+    description: "Une tablette haut de gamme pour les utilisateurs exigeants"
+    prix: 180000
+    stock: 10
+    slug: "tablette-google-pixel-slate"
+  - nom: "Tablette Asus ZenPad 3S"
+    description: "Une tablette Android élégante avec une excellente qualité audio"
+    prix: 80000
+    stock: 18
+    slug: "tablette-asus-zenpad-3s"
+  - nom: "Tablette Sony Xperia Z4"
+    description: "Une tablette étanche et légère avec un écran époustouflant"
+    prix: 90000
+    stock: 12
+    slug: "tablette-sony-xperia-z4"
+  - nom: "Tablette Dell Venue 11 Pro"
+    description: "Une tablette Windows professionnelle pour la productivité en déplacement"
+    prix: 110000
+    stock: 14
+    slug: "tablette-dell-venue-11-pro"
+processeur-amd:
+  - nom: "Processeur AMD Ryzen 9 7900X"
+    description: "Un processeur haut de gamme pour les performances ultimes"
+    prix: 70000
+    stock: 18
+    slug: "processeur-amd-ryzen-9-7900x"
+  - nom: "Processeur AMD Ryzen 7 7700X"
+    description: "Un processeur puissant pour les joueurs et les professionnels"
+    prix: 45000
+    stock: 25
+    slug: "processeur-amd-ryzen-7-7700x"
+  - nom: "Processeur AMD Ryzen 5 7500X"
+    description: "Un processeur abordable avec des performances solides"
+    prix: 35000
+    stock: 20
+    slug: "processeur-amd-ryzen-5-7500x"
+  - nom: "Processeur AMD Ryzen 3 7200X"
+    description: "Un processeur économique pour une utilisation quotidienne"
+    prix: 25000
+    stock: 30
+    slug: "processeur-amd-ryzen-3-7200x"
+  - nom: "Processeur AMD Ryzen Threadripper 9990X"
+    description: "Un processeur monstrueux pour les tâches intensives"
+    prix: 100000
+    stock: 10
+    slug: "processeur-amd-ryzen-threadripper-9990x"
+  - nom: "Processeur AMD Ryzen 7 7800X"
+    description: "Un processeur puissant et performant, idéal pour les joueurs et les professionnels"
+    prix: 50000
+    stock: 20
+    slug: "processeur-amd-ryzen-7-7800x"
+  - nom: "Processeur AMD Ryzen 5 7600X"
+    description: "Un processeur puissant et abordable, idéal pour les joueurs occasionnels"
+    prix: 40000
+    stock: 30
+    slug: "processeur-amd-ryzen-5-7600x"
+  - nom: "Processeur AMD Ryzen 3 7300X"
+    description: "Un processeur performant et polyvalent, idéal pour les étudiants et les professionnels"
+    prix: 30000
+    stock: 15
+    slug: "processeur-amd-ryzen-3-7300x"
+  - nom: "Processeur AMD Ryzen 9 7950X"
+    description: "Un processeur de pointe pour des performances inégalées"
+    prix: 80000
+    stock: 12
+    slug: "processeur-amd-ryzen-9-7950x"
+  - nom: "Processeur AMD Ryzen 7 7600XT"
+    description: "Un processeur puissant pour une expérience de jeu fluide"
+    prix: 55000
+    stock: 22
+    slug: "processeur-amd-ryzen-7-7600xt"
+processeur-intel:
+  - nom: "Processeur Intel Core i9-14900K"
+    description: "Un processeur haut de gamme pour des performances extrêmes"
+    prix: 75000
+    stock: 18
+    slug: "processeur-intel-core-i9-14900k"
+  - nom: "Processeur Intel Core i7-14700K"
+    description: "Un processeur puissant pour les joueurs et les professionnels"
+    prix: 55000
+    stock: 25
+    slug: "processeur-intel-core-i7-14700k"
+  - nom: "Processeur Intel Core i5-14500K"
+    description: "Un processeur abordable avec des performances solides"
+    prix: 45000
+    stock: 20
+    slug: "processeur-intel-core-i5-14500k"
+  - nom: "Processeur Intel Core i3-14300K"
+    description: "Un processeur économique pour une utilisation quotidienne"
+    prix: 35000
+    stock: 30
+    slug: "processeur-intel-core-i3-14300k"
+  - nom: "Processeur Intel Core i9-13900K"
+    description: "Un processeur puissant et performant, idéal pour les joueurs et les professionnels"
+    prix: 60000
+    stock: 20
+    slug: "processeur-intel-core-i9-13900k"
+  - nom: "Processeur Intel Core i7-13700K"
+    description: "Un processeur puissant et abordable, idéal pour les joueurs occasionnels"
+    prix: 50000
+    stock: 30
+    slug: "processeur-intel-core-i7-13700k"
+  - nom: "Processeur Intel Core i5-13600K"
+    description: "Un processeur performant et polyvalent, idéal pour les étudiants et les professionnels"
+    prix: 40000
+    stock: 15
+    slug: "processeur-intel-core-i5-13600k"
+  - nom: "Processeur Intel Core i3-13400K"
+    description: "Un processeur économique pour une expérience de jeu fluide"
+    prix: 30000
+    stock: 25
+    slug: "processeur-intel-core-i3-13400k"
+  - nom: "Processeur Intel Core i9-15900K"
+    description: "Un processeur haut de gamme pour des performances exceptionnelles"
+    prix: 80000
+    stock: 12
+    slug: "processeur-intel-core-i9-15900k"
+  - nom: "Processeur Intel Core i7-15700K"
+    description: "Un processeur puissant pour une expérience de jeu immersive"
+    prix: 65000
+    stock: 20
+    slug: "processeur-intel-core-i7-15700k"
+ram-ddr4:
+  - nom: "Mémoire RAM DDR4 32 Go"
+    description: "Une mémoire RAM puissante et fiable, idéale pour les joueurs et les professionnels"
+    prix: 10000
+    stock: 20
+    slug: "ram-ddr4-32-go"
+  - nom: "Mémoire RAM DDR4 16 Go"
+    description: "Une mémoire RAM puissante et abordable, idéale pour les joueurs occasionnels"
+    prix: 7500
+    stock: 30
+    slug: "ram-ddr4-16-go"
+  - nom: "Mémoire RAM DDR4 8 Go"
+    description: "Une mémoire RAM performante et polyvalente, idéale pour les étudiants et les professionnels"
+    prix: 5000
+    stock: 15
+    slug: "ram-ddr4-8-go"
+  - nom: "Mémoire RAM DDR4 64 Go"
+    description: "Une mémoire RAM de grande capacité pour les tâches intensives"
+    prix: 15000
+    stock: 12
+    slug: "ram-ddr4-64-go"
+  - nom: "Mémoire RAM DDR4 128 Go"
+    description: "Une mémoire RAM de grande capacité pour les professionnels exigeants"
+    prix: 30000
+    stock: 8
+    slug: "ram-ddr4-128-go"
+  - nom: "Mémoire RAM DDR4 32 Go RGB"
+    description: "Une mémoire RAM puissante avec éclairage RGB personnalisable"
+    prix: 12000
+    stock: 18
+    slug: "ram-ddr4-32-go-rgb"
+  - nom: "Mémoire RAM DDR4 16 Go Low-Profile"
+    description: "Une mémoire RAM compacte pour les boîtiers de petite taille"
+    prix: 8000
+    stock: 20
+    slug: "ram-ddr4-16-go-low-profile"
+  - nom: "Mémoire RAM DDR4 64 Go ECC"
+    description: "Une mémoire RAM ECC pour une stabilité maximale en environnement professionnel"
+    prix: 20000
+    stock: 10
+    slug: "ram-ddr4-64-go-ecc"
+  - nom: "Mémoire RAM DDR4 128 Go Kit Quad-Channel"
+    description: "Un kit quad-channel pour des performances exceptionnelles"
+    prix: 40000
+    stock: 6
+    slug: "ram-ddr4-128-go-kit-quad-channel"
+  - nom: "Mémoire RAM DDR4 16 Go RGB"
+    description: "Une mémoire RAM puissante avec éclairage RGB personnalisable"
+    prix: 9000
+    stock: 22
+    slug: "ram-ddr4-16-go-rgb"
+ram-ddr5:
+  - nom: "Mémoire RAM DDR5 64 Go"
+    description: "Une mémoire RAM DDR5 de grande capacité pour des performances exceptionnelles"
+    prix: 35000
+    stock: 18
+    slug: "ram-ddr5-64-go"
+  - nom: "Mémoire RAM DDR5 128 Go"
+    description: "Une mémoire RAM DDR5 de grande capacité pour les professionnels exigeants"
+    prix: 60000
+    stock: 25
+    slug: "ram-ddr5-128-go"
+  - nom: "Mémoire RAM DDR5 16 Go RGB"
+    description: "Une mémoire RAM DDR5 avec éclairage RGB personnalisable"
+    prix: 18000
+    stock: 20
+    slug: "ram-ddr5-16-go-rgb"
+  - nom: "Mémoire RAM DDR5 32 Go Low-Profile"
+    description: "Une mémoire RAM DDR5 compacte pour les boîtiers de petite taille"
+    prix: 22000
+    stock: 30
+    slug: "ram-ddr5-32-go-low-profile"
+  - nom: "Mémoire RAM DDR5 64 Go ECC"
+    description: "Une mémoire RAM DDR5 ECC pour une stabilité maximale en environnement professionnel"
+    prix: 40000
+    stock: 15
+    slug: "ram-ddr5-64-go-ecc"
+  - nom: "Mémoire RAM DDR5 256 Go Kit Quad-Channel"
+    description: "Un kit quad-channel de mémoire RAM DDR5 pour des performances inégalées"
+    prix: 100000
+    stock: 12
+    slug: "ram-ddr5-256-go-kit-quad-channel"
+  - nom: "Mémoire RAM DDR5 16 Go"
+    description: "Une mémoire RAM DDR5 puissante et abordable, idéale pour les joueurs occasionnels"
+    prix: 15000
+    stock: 35
+    slug: "ram-ddr5-16-go"
+  - nom: "Mémoire RAM DDR5 8 Go"
+    description: "Une mémoire RAM DDR5 performante et polyvalente, idéale pour les étudiants et les professionnels"
+    prix: 10000
+    stock: 22
+    slug: "ram-ddr5-8-go"
+  - nom: "Mémoire RAM DDR5 128 Go Kit Quad-Channel"
+    description: "Un kit quad-channel de mémoire RAM DDR5 pour les professionnels exigeants"
+    prix: 80000
+    stock: 18
+    slug: "ram-ddr5-128-go-kit-quad-channel"
+  - nom: "Mémoire RAM DDR5 32 Go RGB"
+    description: "Une mémoire RAM DDR5 puissante avec éclairage RGB personnalisable"
+    prix: 25000
+    stock: 25
+    slug: "ram-ddr5-32-go-rgb"
+carte-graphique:
+  - nom: "Carte graphique Nvidia RTX 4090"
+    description: "Une carte graphique puissante et performante, idéale pour les joueurs et les professionnels"
+    prix: 150000
+    stock: 20
+    slug: "carte-graphique-nvidia-rtx-4090"
+  - nom: "Carte graphique Nvidia RTX 4080"
+    description: "Une carte graphique puissante et abordable, idéale pour les joueurs occasionnels"
+    prix: 100000
+    stock: 30
+    slug: "carte-graphique-nvidia-rtx-4080"
+  - nom: "Carte graphique Nvidia RTX 4070"
+    description: "Une carte graphique performante et polyvalente, idéale pour les étudiants et les professionnels"
+    prix: 75000
+    stock: 15
+    slug: "carte-graphique-nvidia-rtx-4070"
+  - nom: "Carte graphique AMD Radeon RX 7900XT"
+    description: "Une carte graphique AMD de pointe pour les jeux les plus exigeants"
+    prix: 120000
+    stock: 18
+    slug: "carte-graphique-amd-radeon-rx-7900xt"
+  - nom: "Carte graphique Nvidia RTX 4060"
+    description: "Une carte graphique abordable pour une expérience de jeu fluide"
+    prix: 40000
+    stock: 25
+    slug: "carte-graphique-nvidia-rtx-4060"
+  - nom: "Carte graphique AMD Radeon RX 7800"
+    description: "Une carte graphique AMD performante pour les jeux en haute résolution"
+    prix: 90000
+    stock: 20
+    slug: "carte-graphique-amd-radeon-rx-7800"
+  - nom: "Carte graphique Nvidia GTX 1660 Super"
+    description: "Une carte graphique Nvidia abordable pour les joueurs occasionnels"
+    prix: 25000
+    stock: 30
+    slug: "carte-graphique-nvidia-gtx-1660-super"
+  - nom: "Carte graphique AMD Radeon RX 6700XT"
+    description: "Une carte graphique AMD puissante pour les jeux en 1440p"
+    prix: 80000
+    stock: 15
+    slug: "carte-graphique-amd-radeon-rx-6700xt"
+  - nom: "Carte graphique Nvidia RTX 4050"
+    description: "Une carte graphique d'entrée de gamme pour les jeux légers"
+    prix: 15000
+    stock: 22
+    slug: "carte-graphique-nvidia-rtx-4050"
+  - nom: "Carte graphique AMD Radeon RX 7600"
+    description: "Une carte graphique AMD abordable pour les jeux en 1080p"
+    prix: 40000
+    stock: 18
+    slug: "carte-graphique-amd-radeon-rx-7600"
+disque-ssd:
+  - nom: "Disque SSD 1 To"
+    description: "Un disque SSD puissant et fiable, idéal pour le stockage de données"
+    prix: 10000
+    stock: 20
+    slug: "disque-ssd-1-to"
+  - nom: "Disque SSD 500 Go"
+    description: "Un disque SSD puissant et abordable, idéal pour le stockage de données"
+    prix: 7500
+    stock: 30
+    slug: "disque-ssd-500-go"
+  - nom: "Disque SSD 250 Go"
+    description: "Un disque SSD performant et polyvalent, idéal pour le stockage de données"
+    prix: 5000
+    stock: 15
+    slug: "disque-ssd-250-go"
+  - nom: "Disque SSD NVMe 2 To"
+    description: "Un disque SSD NVMe ultra-rapide avec une grande capacité de stockage"
+    prix: 25000
+    stock: 18
+    slug: "disque-ssd-nvme-2-to"
+  - nom: "Disque SSD SATA 3 1 To"
+    description: "Un disque SSD SATA 3 haute performance pour une expérience fluide"
+    prix: 8000
+    stock: 25
+    slug: "disque-ssd-sata-3-1-to"
+  - nom: "Disque SSD M.2 500 Go"
+    description: "Un disque SSD M.2 compact et rapide pour les ordinateurs portables"
+    prix: 6000
+    stock: 20
+    slug: "disque-ssd-m-2-500-go"
+  - nom: "Disque SSD NVMe 4 To"
+    description: "Un disque SSD NVMe de grande capacité pour le stockage de données massif"
+    prix: 50000
+    stock: 10
+    slug: "disque-ssd-nvme-4-to"
+  - nom: "Disque SSD SATA 3 2 To"
+    description: "Un disque SSD SATA 3 haute performance avec une grande capacité de stockage"
+    prix: 12000
+    stock: 12
+    slug: "disque-ssd-sata-3-2-to"
+  - nom: "Disque SSD M.2 1 To"
+    description: "Un disque SSD M.2 rapide et de grande capacité pour les ordinateurs portables"
+    prix: 9000
+    stock: 22
+    slug: "disque-ssd-m-2-1-to"
+  - nom: "Disque SSD SATA 3 4 To"
+    description: "Un disque SSD SATA 3 haute performance avec une capacité de stockage massive"
+    prix: 20000
+    stock: 8
+    slug: "disque-ssd-sata-3-4-to"
+disque-m2:
+  - nom: "Disque M2 2 To"
+    description: "Un disque M2 de grande capacité pour le stockage de données massif"
+    prix: 30000
+    stock: 18
+    slug: "disque-m2-2-to"
+  - nom: "Disque M2 4 To"
+    description: "Un disque M2 ultra-rapide avec une capacité de stockage énorme"
+    prix: 50000
+    stock: 25
+    slug: "disque-m2-4-to"
+  - nom: "Disque M2 1 To RGB"
+    description: "Un disque M2 avec éclairage RGB personnalisable"
+    prix: 22000
+    stock: 20
+    slug: "disque-m2-1-to-rgb"
+  - nom: "Disque M2 512 Go"
+    description: "Un disque M2 rapide et abordable pour les ordinateurs portables"
+    prix: 15000
+    stock: 30
+    slug: "disque-m2-512-go"
+  - nom: "Disque M2 8 To"
+    description: "Un disque M2 de grande capacité pour le stockage de données massif"
+    prix: 80000
+    stock: 15
+    slug: "disque-m2-8-to"
+  - nom: "Disque M2 256 Go"
+    description: "Un disque M2 compact et performant pour les ordinateurs portables"
+    prix: 12000
+    stock: 18
+    slug: "disque-m2-256-go"
+  - nom: "Disque M2 2 To NVMe"
+    description: "Un disque M2 NVMe ultra-rapide avec une grande capacité de stockage"
+    prix: 35000
+    stock: 25
+    slug: "disque-m2-2-to-nvme"
+  - nom: "Disque M2 512 Go Low-Profile"
+    description: "Un disque M2 compact de faible hauteur pour les boîtiers de petite taille"
+    prix: 18000
+    stock: 30
+    slug: "disque-m2-512-go-low-profile"
+  - nom: "Disque M2 16 To"
+    description: "Un disque M2 de grande capacité pour les besoins de stockage massifs"
+    prix: 120000
+    stock: 22
+    slug: "disque-m2-16-to"
+  - nom: "Disque M2 128 Go"
+    description: "Un disque M2 économique pour un stockage rapide"
+    prix: 7000
+    stock: 12
+    slug: "disque-m2-128-go"
+disque-dur-magnetique:
+  - nom: "Disque dur magnétique 2 To"
+    description: "Un disque dur magnétique de grande capacité pour le stockage de données"
+    prix: 7000
+    stock: 18
+    slug: "disque-dur-magnetique-2-to"
+  - nom: "Disque dur magnétique 4 To"
+    description: "Un disque dur magnétique de grande capacité pour le stockage massif"
+    prix: 12000
+    stock: 25
+    slug: "disque-dur-magnetique-4-to"
+  - nom: "Disque dur magnétique 1 To RGB"
+    description: "Un disque dur magnétique avec éclairage RGB personnalisable"
+    prix: 8000
+    stock: 20
+    slug: "disque-dur-magnetique-1-to-rgb"
+  - nom: "Disque dur magnétique 500 Go"
+    description: "Un disque dur magnétique abordable pour le stockage de données"
+    prix: 5000
+    stock: 30
+    slug: "disque-dur-magnetique-500-go"
+  - nom: "Disque dur magnétique 8 To"
+    description: "Un disque dur magnétique de grande capacité pour le stockage massif"
+    prix: 15000
+    stock: 15
+    slug: "disque-dur-magnetique-8-to"
+  - nom: "Disque dur magnétique 256 Go"
+    description: "Un disque dur magnétique compact et performant pour le stockage"
+    prix: 4000
+    stock: 18
+    slug: "disque-dur-magnetique-256-go"
+  - nom: "Disque dur magnétique 2 To 7200 RPM"
+    description: "Un disque dur magnétique haute vitesse pour une performance optimale"
+    prix: 9000
+    stock: 25
+    slug: "disque-dur-magnetique-2-to-7200-rpm"
+  - nom: "Disque dur magnétique 1 To Low-Profile"
+    description: "Un disque dur magnétique de faible hauteur pour les boîtiers compacts"
+    prix: 6000
+    stock: 30
+    slug: "disque-dur-magnetique-1-to-low-profile"
+  - nom: "Disque dur magnétique 16 To"
+    description: "Un disque dur magnétique de grande capacité pour le stockage massif"
+    prix: 18000
+    stock: 15
+    slug: "disque-dur-magnetique-16-to"
+  - nom: "Disque dur magnétique 512 Go"
+    description: "Un disque dur magnétique économique pour le stockage de données"
+    prix: 3000
+    stock: 22
+    slug: "disque-dur-magnetique-512-go"
+cle-usb:
+  - nom: "Clé USB 64 Go"
+    description: "Une clé USB de grande capacité pour le transfert de données rapide"
+    prix: 1500
+    stock: 20
+    slug: "cle-usb-64-go"
+  - nom: "Clé USB 128 Go"
+    description: "Une clé USB haute capacité pour le stockage de données portable"
+    prix: 2000
+    stock: 25
+    slug: "cle-usb-128-go"
+  - nom: "Clé USB 256 Go"
+    description: "Une clé USB de grande capacité pour le stockage de données massif"
+    prix: 3000
+    stock: 20
+    slug: "cle-usb-256-go"
+  - nom: "Clé USB 32 Go NFC"
+    description: "Une clé USB avec technologie NFC pour un accès sécurisé aux données"
+    prix: 1200
+    stock: 30
+    slug: "cle-usb-32-go-nfc"
+  - nom: "Clé USB 512 Go"
+    description: "Une clé USB de grande capacité pour le stockage de données massif"
+    prix: 4000
+    stock: 15
+    slug: "cle-usb-512-go"
+  - nom: "Clé USB 16 Go Waterproof"
+    description: "Une clé USB résistante à l'eau pour la protection des données"
+    prix: 800
+    stock: 18
+    slug: "cle-usb-16-go-waterproof"
+  - nom: "Clé USB 1 To"
+    description: "Une clé USB de grande capacité pour le stockage de données massif"
+    prix: 5000
+    stock: 25
+    slug: "cle-usb-1-to"
+  - nom: "Clé USB 8 Go Metal"
+    description: "Une clé USB en métal robuste pour une durabilité maximale"
+    prix: 700
+    stock: 30
+    slug: "cle-usb-8-go-metal"
+  - nom: "Clé USB 64 Go OTG"
+    description: "Une clé USB OTG pour une utilisation facile avec les appareils mobiles"
+    prix: 1800
+    stock: 15
+    slug: "cle-usb-64-go-otg"
+  - nom: "Clé USB 4 Go"
+    description: "Une clé USB économique pour le transfert de données de base"
+    prix: 500
+    stock: 22
+    slug: "cle-usb-4-go"
+carte-mere:
+  - nom: "Carte mère ASUS ROG Strix Z790-A Gaming WiFi"
+    description: "Une carte mère puissante et performante pour les derniers processeurs Intel"
+    prix: 55000
+    stock: 18
+    slug: "carte-mere-asus-rog-strix-z790-a-gaming-wifi"
+  - nom: "Carte mère Gigabyte B660 Aorus Pro"
+    description: "Une carte mère abordable compatible avec les processeurs Intel Core"
+    prix: 35000
+    stock: 25
+    slug: "carte-mere-gigabyte-b660-aorus-pro"
+  - nom: "Carte mère MSI MAG X670 Tomahawk"
+    description: "Une carte mère polyvalente compatible avec les processeurs AMD Ryzen"
+    prix: 45000
+    stock: 20
+    slug: "carte-mere-msi-mag-x670-tomahawk"
+  - nom: "Carte mère ASRock B560M-ITX/ac"
+    description: "Une carte mère mini-ITX compacte pour les configurations compactes"
+    prix: 25000
+    stock: 18
+    slug: "carte-mere-asrock-b560m-itx-ac"
+  - nom: "Carte mère MSI MPG Z590 Gaming Edge WiFi"
+    description: "Une carte mère performante avec connectivité WiFi 6"
+    prix: 48000
+    stock: 22
+    slug: "carte-mere-msi-mpg-z590-gaming-edge-wifi"
+  - nom: "Carte mère Gigabyte Z690 Vision G"
+    description: "Une carte mère polyvalente avec un design élégant"
+    prix: 52000
+    stock: 20
+    slug: "carte-mere-gigabyte-z690-vision-g"
+  - nom: "Carte mère ASUS Prime H510M-E"
+    description: "Une carte mère économique pour les configurations de base"
+    prix: 15000
+    stock: 30
+    slug: "carte-mere-asus-prime-h510m-e"
+  - nom: "Carte mère MSI MAG B450 TOMAHAWK"
+    description: "Une carte mère AMD B450 polyvalente pour les processeurs Ryzen"
+    prix: 18000
+    stock: 25
+    slug: "carte-mere-msi-mag-b450-tomahawk"
+  - nom: "Carte mère ASRock X570 Taichi"
+    description: "Une carte mère haut de gamme avec prise en charge PCIe 4.0"
+    prix: 38000
+    stock: 15
+    slug: "carte-mere-asrock-x570-taichi"
+  - nom: "Carte mère ASUS ROG Crosshair VIII Hero"
+    description: "Une carte mère haut de gamme pour les processeurs Ryzen de 3e génération"
+    prix: 40000
+    stock: 18
+    slug: "carte-mere-asus-rog-crosshair-viii-hero"
+ecran-pc:
+  - nom: "Écran PC ASUS ROG Swift PG279QM"
+    description: "Un écran PC gaming haut de gamme avec taux de rafraîchissement élevé"
+    prix: 70000
+    stock: 20
+    slug: "ecran-pc-asus-rog-swift-pg279qm"
+  - nom: "Écran PC LG UltraGear 27GN950-B"
+    description: "Un écran PC gaming 4K avec prise en charge G-Sync"
+    prix: 80000
+    stock: 22
+    slug: "ecran-pc-lg-ultragear-27gn950-b"
+  - nom: "Écran PC Dell S2721DGF"
+    description: "Un écran PC gaming QHD avec taux de rafraîchissement élevé"
+    prix: 50000
+    stock: 25
+    slug: "ecran-pc-dell-s2721dgf"
+  - nom: "Écran PC MSI Optix MAG241C"
+    description: "Un écran PC gaming incurvé pour une immersion totale"
+    prix: 30000
+    stock: 20
+    slug: "ecran-pc-msi-optix-mag241c"
+  - nom: "Écran PC Acer Predator X27"
+    description: "Un écran PC gaming HDR avec résolution 4K"
+    prix: 120000
+    stock: 15
+    slug: "ecran-pc-acer-predator-x27"
+  - nom: "Écran PC AOC CQ32G1"
+    description: "Un écran PC gaming QHD abordable avec un grand écran"
+    prix: 40000
+    stock: 20
+    slug: "ecran-pc-aoc-cq32g1"
+  - nom: "Écran PC Samsung Odyssey G7"
+    description: "Un écran PC gaming incurvé avec un taux de rafraîchissement ultra-élevé"
+    prix: 60000
+    stock: 18
+    slug: "ecran-pc-samsung-odyssey-g7"
+  - nom: "Écran PC HP Omen X 27"
+    description: "Un écran PC gaming avec taux de rafraîchissement élevé et résolution QHD"
+    prix: 55000
+    stock: 22
+    slug: "ecran-pc-hp-omen-x-27"
+  - nom: "Écran PC ViewSonic Elite XG270QG"
+    description: "Un écran PC gaming IPS avec prise en charge G-Sync"
+    prix: 65000
+    stock: 20
+    slug: "ecran-pc-viewsonic-elite-xg270qg"
+  - nom: "Écran PC Alienware AW3420DW"
+    description: "Un écran PC gaming ultralarge avec prise en charge G-Sync"
+    prix: 90000
+    stock: 18
+    slug: "ecran-pc-alienware-aw3420dw"
+clavier:
+  - nom: "Clavier mécanique SteelSeries Apex Pro"
+    description: "Un clavier mécanique haut de gamme avec switches réglables"
+    prix: 18000
+    stock: 20
+    slug: "clavier-mecanique-steelseries-apex-pro"
+  - nom: "Clavier mécanique HyperX Alloy FPS Pro"
+    description: "Un clavier mécanique compact pour les joueurs FPS"
+    prix: 8000
+    stock: 30
+    slug: "clavier-mecanique-hyperx-alloy-fps-pro"
+  - nom: "Clavier mécanique Corsair K95 RGB Platinum XT"
+    description: "Un clavier mécanique haut de gamme avec éclairage RGB"
+    prix: 20000
+    stock: 15
+    slug: "clavier-mecanique-corsair-k95-rgb-platinum-xt"
+  - nom: "Clavier mécanique Razer Huntsman Elite"
+    description: "Un clavier mécanique avec switches opto-mécaniques"
+    prix: 15000
+    stock: 22
+    slug: "clavier-mecanique-razer-huntsman-elite"
+  - nom: "Clavier mécanique Logitech G Pro X"
+    description: "Un clavier mécanique personnalisable avec switches amovibles"
+    prix: 12000
+    stock: 20
+    slug: "clavier-mecanique-logitech-g-pro-x"
+  - nom: "Clavier mécanique Ducky One 2 Mini"
+    description: "Un clavier mécanique 60% compact avec touches PBT"
+    prix: 10000
+    stock: 25
+    slug: "clavier-mecanique-ducky-one-2-mini"
+  - nom: "Clavier mécanique ROCCAT Vulcan 121 AIMO"
+    description: "Un clavier mécanique avec éclairage AIMO personnalisable"
+    prix: 13000
+    stock: 20
+    slug: "clavier-mecanique-roccat-vulcan-121-aimo"
+  - nom: "Clavier mécanique Anne Pro 2"
+    description: "Un clavier mécanique sans fil 60% avec éclairage RGB"
+    prix: 9000
+    stock: 28
+    slug: "clavier-mecanique-anne-pro-2"
+  - nom: "Clavier mécanique Corsair K70 RGB MK.2"
+    description: "Un clavier mécanique avec éclairage RGB et repose-poignets"
+    prix: 14000
+    stock: 20
+    slug: "clavier-mecanique-corsair-k70-rgb-mk-2"
+  - nom: "Clavier mécanique Keychron K6"
+    description: "Un clavier mécanique sans fil 65% compact avec rétroéclairage"
+    prix: 7000
+    stock: 30
+    slug: "clavier-mecanique-keychron-k6"
+souris:
+  - nom: "Souris gaming SteelSeries Rival 600"
+    description: "Une souris gaming haut de gamme avec double capteur"
+    prix: 8000
+    stock: 18
+    slug: "souris-gaming-steelseries-rival-600"
+  - nom: "Souris gaming Glorious Model O"
+    description: "Une souris gaming légère avec un capteur optique de haute précision"
+    prix: 5000
+    stock: 25
+    slug: "souris-gaming-glorious-model-o"
+  - nom: "Souris gaming HyperX Pulsefire FPS Pro"
+    description: "Une souris gaming conçue pour les FPS avec éclairage RGB"
+    prix: 6000
+    stock: 20
+    slug: "souris-gaming-hyperx-pulsefire-fps-pro"
+  - nom: "Souris gaming Logitech G Pro Wireless"
+    description: "Une souris gaming sans fil utilisée par de nombreux professionnels"
+    prix: 12000
+    stock: 18
+    slug: "souris-gaming-logitech-g-pro-wireless"
+  - nom: "Souris gaming Roccat Kone AIMO"
+    description: "Une souris gaming avec éclairage AIMO personnalisable"
+    prix: 7000
+    stock: 22
+    slug: "souris-gaming-roccat-kone-aimo"
+  - nom: "Souris gaming Corsair Dark Core RGB/SE"
+    description: "Une souris gaming modulaire avec options de personnalisation"
+    prix: 9000
+    stock: 20
+    slug: "souris-gaming-corsair-dark-core-rgb-se"
+  - nom: "Souris gaming Razer DeathAdder Elite"
+    description: "Une souris gaming classique avec capteur optique de précision"
+    prix: 7000
+    stock: 28
+    slug: "souris-gaming-razer-deathadder-elite"
+  - nom: "Souris gaming SteelSeries Sensei 310"
+    description: "Une souris gaming ambidextre avec capteur TrueMove3"
+    prix: 6000
+    stock: 20
+    slug: "souris-gaming-steelseries-sensei-310"
+  - nom: "Souris gaming Glorious Model D"
+    description: "Une souris gaming ergonomique pour une prise en main confortable"
+    prix: 5000
+    stock: 30
+    slug: "souris-gaming-glorious-model-d"
+  - nom: "Souris gaming Logitech G203 Lightsync"
+    description: "Une souris gaming abordable avec éclairage Lightsync"
+    prix: 4000
+    stock: 22
+    slug: "souris-gaming-logitech-g203-lightsync"
+imprimantes_laser:
+  - nom: "Imprimante laser Brother HL-L2395DW"
+    description: "Une imprimante laser monochrome avec scanner intégré"
+    prix: 25000
+    stock: 20
+    slug: "imprimante-laser-brother-hl-l2395dw"
+  - nom: "Imprimante multifonctions Canon imageCLASS MF236n"
+    description: "Une imprimante laser multifonctions compacte pour les petits bureaux"
+    prix: 20000
+    stock: 18
+    slug: "imprimante-multifonctions-canon-imageclass-mf236n"
+  - nom: "Imprimante laser Samsung Xpress M2020W"
+    description: "Une imprimante laser monochrome avec connectivité sans fil"
+    prix: 15000
+    stock: 20
+    slug: "imprimante-laser-samsung-xpress-m2020w"
+  - nom: "Imprimante laser Dell E310dw"
+    description: "Une imprimante laser monochrome abordable pour un usage personnel"
+    prix: 12000
+    stock: 20
+    slug: "imprimante-laser-dell-e310dw"
+  - nom: "Imprimante laser Lexmark B2236dw"
+    description: "Une imprimante laser monochrome compacte pour les petits espaces"
+    prix: 18000
+    stock: 25
+    slug: "imprimante-laser-lexmark-b2236dw"
+
+jet_d_encre:
+  - nom: "Imprimante jet d'encre Epson EcoTank ET-2760"
+    description: "Une imprimante jet d'encre avec réservoirs d'encre rechargeables"
+    prix: 30000
+    stock: 22
+    slug: "imprimante-jet-dencre-epson-ecotank-et-2760"
+  - nom: "Imprimante jet d'encre HP OfficeJet Pro 9025"
+    description: "Une imprimante jet d'encre tout-en-un pour les professionnels"
+    prix: 35000
+    stock: 25
+    slug: "imprimante-jet-dencre-hp-officejet-pro-9025"
+  - nom: "Imprimante jet d'encre Canon PIXMA TR4520"
+    description: "Une imprimante jet d'encre tout-en-un compacte pour la maison"
+    prix: 10000
+    stock: 22
+    slug: "imprimante-jet-dencre-canon-pixma-tr4520"
+  - nom: "Imprimante jet d'encre Epson Expression Home XP-4100"
+    description: "Une imprimante jet d'encre tout-en-un pour la maison"
+    prix: 8000
+    stock: 30
+    slug: "imprimante-jet-dencre-epson-expression-home-xp-4100"
+  - nom: "Imprimante jet d'encre Brother DCP-J1100DW"
+    description: "Une imprimante jet d'encre tout-en-un avec écran tactile"
+    prix: 20000
+    stock: 28
+    slug: "imprimante-jet-dencre-brother-dcp-j1100dw"
+
+#imprimantes:
+#  - nom: "Imprimante laser Brother HL-L2395DW"
+#    description: "Une imprimante laser monochrome avec scanner intégré"
+#    prix: 25000
+#    stock: 20
+#    slug: "imprimante-laser-brother-hl-l2395dw"
+#  - nom: "Imprimante jet d'encre Epson EcoTank ET-2760"
+#    description: "Une imprimante jet d'encre avec réservoirs d'encre rechargeables"
+#    prix: 30000
+#    stock: 22
+#    slug: "imprimante-jet-dencre-epson-ecotank-et-2760"
+#  - nom: "Imprimante multifonctions Canon imageCLASS MF236n"
+#    description: "Une imprimante laser multifonctions compacte pour les petits bureaux"
+#    prix: 20000
+#    stock: 18
+#    slug: "imprimante-multifonctions-canon-imageclass-mf236n"
+#  - nom: "Imprimante jet d'encre HP OfficeJet Pro 9025"
+#    description: "Une imprimante jet d'encre tout-en-un pour les professionnels"
+#    prix: 35000
+#    stock: 25
+#    slug: "imprimante-jet-dencre-hp-officejet-pro-9025"
+#  - nom: "Imprimante laser Samsung Xpress M2020W"
+#    description: "Une imprimante laser monochrome avec connectivité sans fil"
+#    prix: 15000
+#    stock: 20
+#    slug: "imprimante-laser-samsung-xpress-m2020w"
+#  - nom: "Imprimante jet d'encre Canon PIXMA TR4520"
+#    description: "Une imprimante jet d'encre tout-en-un compacte pour la maison"
+#    prix: 10000
+#    stock: 22
+#    slug: "imprimante-jet-dencre-canon-pixma-tr4520"
+#  - nom: "Imprimante laser Dell E310dw"
+#    description: "Une imprimante laser monochrome abordable pour un usage personnel"
+#    prix: 12000
+#    stock: 20
+#    slug: "imprimante-laser-dell-e310dw"
+#  - nom: "Imprimante jet d'encre Epson Expression Home XP-4100"
+#    description: "Une imprimante jet d'encre tout-en-un pour la maison"
+#    prix: 8000
+#    stock: 30
+#    slug: "imprimante-jet-dencre-epson-expression-home-xp-4100"
+#  - nom: "Imprimante laser Lexmark B2236dw"
+#    description: "Une imprimante laser monochrome compacte pour les petits espaces"
+#    prix: 18000
+#    stock: 25
+#    slug: "imprimante-laser-lexmark-b2236dw"
+#  - nom: "Imprimante jet d'encre Brother DCP-J1100DW"
+#    description: "Une imprimante jet d'encre tout-en-un avec écran tactile"
+#    prix: 20000
+#    stock: 28
+#    slug: "imprimante-jet-dencre-brother-dcp-j1100dw"

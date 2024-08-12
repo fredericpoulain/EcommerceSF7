@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+{% block importmap %}
+    {{ importmap(['app', 'productsList']) }}
+{% endblock %}
+{% block title %}Liste des produits{% endblock %}
+
+{% block body %}
+
+    <div class="pageTitle">
+        <a href=""><h1>{{ title }}</h1></a>
+    </div>
+    {% if products is not null %}
+    {% include 'common/breadcrumb.html.twig' %}
+    <div class="mainPage">
+
+        <div class="listLinkProductPage">
+
+            {% for product in products %}
+                <div class="blocLinkProduct">
+                    <a href="{{ path('app_products', {slug:product.slug}) }}">
+                        <div class="linkProductPage">
+                            <div class="linkProductPageImage">
+                                <img src="{{ asset('images/products/product-thumb.png') }}">
+                            </div>
+                            <div class="linkProductPageDetails">
+                                <p class="productName">{{ product.name }}</p>
+                                <p class="productDesc">{{ product.description | raw }}</p>
+                                <div class="PriceStock">
+                                    <p>{{ product.price / 100}} €</p>
+                                    <p>{% if product.stock > 5 %}En stock{% elseif product.stock > 0 %}Stock limité{% else %}Rupture{% endif %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            {% endfor %}
+            <div class="paginator">
+                {{ knp_pagination_render(products, 'paginator/paginator.html.twig') }}
+
+            </div>
+
+        </div>
+    </div>
+    {% else %}
+        <div class="pageTitle">
+            <h3>Aucuns produits dans cette catégorie</h3>
+        </div>
+
+    {% endif %}
+
+
+
+
+{% endblock %}

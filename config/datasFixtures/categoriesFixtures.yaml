@@ -1,0 +1,112 @@
+Ordinateurs:
+  description: 'Catégorie ordinateur, pc, mac...'
+  image: 'image_category.png'
+  childrenCategory:
+    PC tour:
+      description: 'Catégorie des tours d''ordinateur.'
+      image: 'image_category.png'
+      childrenCategory: null
+    PC portable:
+      description: 'Catégorie des PC portable.'
+      image: 'image_category.png'
+      childrenCategory:
+        PC portable gamer:
+          description: 'Catégorie des pc portables gamer.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Portable Mac:
+          description: 'Catégorie des portables Mac.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Sacoche portable:
+          description: 'Catégorie des sacoches de portable .'
+          image: 'image_category.png'
+          childrenCategory: null
+    Tablette:
+      description: 'Catégorie des tablettes.'
+      image: 'image_category.png'
+      childrenCategory: null
+Composants:
+  description: 'Catégorie des composants : Carte graphique, ram...'
+  image: 'image_category.png'
+  childrenCategory:
+    Processeur:
+      description: 'Catégorie des processeurs.'
+      image: 'image_category.png'
+      childrenCategory:
+        Processeur AMD:
+          description: 'Catégorie des processeur AMD.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Processeur INTEL:
+          description: 'Catégorie des processeur INTEL.'
+          image: 'image_category.png'
+          childrenCategory: null
+    RAM:
+      description: 'Catégorie de la mémoire vive.'
+      image: 'image_category.png'
+      childrenCategory:
+        Ram DDR4:
+          description: 'Catégorie de la ram ddr4.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Ram DDR5:
+          description: 'Catégorie de la ram ddr5.'
+          image: 'image_category.png'
+          childrenCategory: null
+    Carte graphique:
+      description: 'Catégorie des cartes graphiques.'
+      image: 'image_category.png'
+      childrenCategory: null
+    Stockage:
+      description: 'Catégorie des disques de stockage.'
+      image: 'image_category.png'
+      childrenCategory:
+        disque SSD:
+          description: 'Catégorie des disques SSD.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Disque SSD M2:
+          description: 'Catégorie des SSD M.2 NVMe.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Disque dur magnétique:
+          description: 'Catégorie de la ram ddr5.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Clé USB:
+          description: 'Catégorie des clé USB.'
+          image: 'image_category.png'
+          childrenCategory: null
+    Carte mère:
+      description: 'Catégorie des cartes mères.'
+      image: 'image_category.png'
+      childrenCategory: null
+Périphériques:
+  description: 'Catégorie de tous les périphériques : claviers, écran...'
+  image: 'image_category.png'
+  childrenCategory:
+    Écran PC:
+      description: 'Catégorie des écrans.'
+      image: 'image_category.png'
+      childrenCategory: null
+    Clavier:
+      description: 'Catégorie des claviers.'
+      image: 'image_category.png'
+      childrenCategory: null
+    Souris:
+      description: 'Catégorie des souris.'
+      image: 'image_category.png'
+      childrenCategory: null
+    Imprimantes:
+      description: 'Catégorie des imprimantes.'
+      image: 'image_category.png'
+      childrenCategory:
+        Imprimante laser:
+          description: 'Catégorie des imprimantes laser.'
+          image: 'image_category.png'
+          childrenCategory: null
+        Imprimante jet d'encre:
+          description: 'Catégorie des imprimantes jet d''encre.'
+          image: 'image_category.png'
+          childrenCategory: null

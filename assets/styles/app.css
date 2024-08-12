@@ -1,0 +1,738 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+:root {
+    --backgroundPrimary1: #27649b;
+    --backgroundPrimary2: #20517d;
+    --backgroundPrimary3: #183e5f;
+    --backgroundPrimary4: #122239;
+    --backgroundPrimary4b: #172a48;
+    --backgroundPrimary5: #1f4d76;
+    --white1: #e2e3e6;
+    --grey1: #9c9c9d;
+    --blueLight1: #4eb5ff;
+    --red1: #ac3d3d;
+    --red1b: #ba4141;
+    --red2: #e26464;
+    --orange1: #ca8416;
+    --orange1b: #e1941b;
+    --green1: #2def34;
+    --green2: #66ba6a;
+    --green3: #2b752f;
+    --errorColor: #d75966;
+    --errorBackgroundColor: #d75966;
+    --errorTextColor: #230a0d;
+    --successColorText: #0e3b23;
+    --successBackgroundColor: #27db7c;
+    --infoColorText: #09314a;
+    --infoBackgroundColor: #68aad5;
+}
+
+/*font-family: 'Archivo Black', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--white1);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--backgroundPrimary3);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+body a {
+    text-decoration: none;
+    color: var(--white1);
+}
+
+.headerTop {
+    background-color: var(--backgroundPrimary1);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+
+
+}
+
+.headerTop_left {
+    display: flex;
+    align-items: center;
+}
+
+.headerTop_right {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.headerTop_right a {
+    height: 100%;
+}
+
+.headerTop_right div {
+    padding: 10px;
+}
+.headerTop_right_cart{
+    position: relative;
+}
+.productsQuantity{
+    position: absolute;
+    right: 5px;
+    top: -13px;
+    color: #000000;
+    font-weight: bold;
+}
+.headerTop_right_profil span,
+.headerTop_right_cart span:first-of-type {
+    display: none;
+}
+.profilMenuDesktop{
+    display: none;
+}
+.headerDivSearch {
+    width: 100%;
+}
+
+/*.headerSearchOverlay,*/
+.headerMenuOverlay {
+    background-color: var(--backgroundPrimary3);
+    width: 100%;
+    position: absolute;
+    right: -110%;
+    top: 90px;
+    z-index: 100;
+    height: 100vh;
+    /*font-size: 20px;*/
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.headerMenuOverlay {
+    right: 110%;
+}
+
+/*.headerSearchOverlayActive,*/
+.headerMenuOverlayActive {
+    right: 0;
+}
+.headerSearchOverlay{
+    background-color: var(--backgroundPrimary3);
+    width: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    visibility: hidden;
+
+
+
+}
+.headerSearchOverlayActive{
+    transform: translateX(0vw);
+    visibility: visible;
+}
+.divInputHeaderSearch {
+    position: relative;
+    /*display: flex;*/
+}
+
+.inputHeaderSearch {
+    position: relative;
+    background-color: var(--backgroundPrimary1);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    color: var(--white1);
+}
+
+.headerSearchOverlay p {
+    margin: 25px 0 0 0;
+    text-align: center;
+    font-size: 21px;
+}
+
+.searchDeleteInputMobile{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: var(--white1);
+    border: none;
+    font-size: 18px;
+}
+.divButtonSearchOverlay{
+    text-align: center;
+}
+.divButtonSearchOverlay button{
+    background-color: var(--backgroundPrimary1);
+    color: var(--white1);
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.divCloseHeaderSearch,
+.divCloseprofilMenu {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+}
+
+.searchDeleteInputMobile {
+    display: none;
+}
+
+/*--------MENU BURGER-------*/
+.burgerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 37px;
+    width: 37px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.burgerMenu span,
+.burgerMenu span:before,
+.burgerMenu span:after {
+    background: var(--white1);
+    display: block;
+    height: 5px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+.burgerMenu span:before,
+.burgerMenu span:after {
+    content: "";
+}
+
+.burgerMenu span {
+    width: 37px;
+}
+
+.burgerMenu span:before {
+    top: -10px;
+    width: 26px;
+}
+
+.burgerMenu span:after {
+    /*left: 0px;*/
+    top: 10px;
+    width: 30px;
+}
+
+.burgerMenu.activeSpan span {
+    transform: rotate(-45deg);
+    width: 37px;
+}
+
+.burgerMenu.activeSpan span:before {
+    top: 0;
+    transform: rotate(90deg);
+    width: 37px;
+}
+
+.burgerMenu.activeSpan span:after {
+    top: 0;
+    opacity: 0;
+    width: 0;
+}
+
+/*Mobile menu accordion*/
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordionItem {
+    background-color: var(--backgroundPrimary1);
+    margin: 18px 5px;
+    padding: 8px;
+    border-radius: 10px
+}
+
+.accordion-item-header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 28px;
+    margin-left: 30px
+}
+
+.accordion-item-header::after {
+    font-family: "FontAwesome", serif;
+    content: "\f078";
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordionCatMain {
+    font-size: 22px;
+}
+
+/*Profil Menu*/
+.profilMenuMobile {
+    /*background-color: red;*/
+    background-color: var(--backgroundPrimary2);
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -40px;
+    height: 130px;
+    z-index: 50;
+    /*height: 100vh;*/
+    /*font-size: 20px;*/
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilMenuMobile hr {
+    margin: 0;
+    width: 100%;
+}
+
+.profilMenuMobileActive {
+    top: 90px;
+}
+
+.profilMenuMobile ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+}
+
+.profilMenuMobile li {
+    list-style: none;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    /*justify-content: center;*/
+    /*margin: 10px 25px 10px;*/
+    font-size: 18px;
+}
+
+
+.menuDesktop {
+    display: none;
+}
+
+
+.logoHeader {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+}
+
+main {
+    padding: 8px;
+    background-color: var(--backgroundPrimary3);
+    color: var(--white1);
+}
+
+
+.sousMenuAccordion {
+    background-color: var(--backgroundPrimary1);
+    padding-left: 0;
+    width: 273px;
+}
+
+.sousMenuAccordion a {
+    color: var(--white1);
+    text-decoration: none;
+}
+
+.sousMenuAccordion ul {
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.sousMenuAccordion li {
+    padding: 8px;
+}
+
+.mainBlocAlertMessage {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* **** FIL ARIANE **** */
+
+.arianeNav ul{
+    display: flex;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+.arianeNav ul li {
+    list-style: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.arianeNav .fa-caret-right {
+    margin-right: 8px
+}
+
+
+footer {
+    background-color: var(--backgroundPrimary1);
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: auto;
+}
+
+
+/* ********** MESSAGES FLASH ************ */
+.blocMessageFlash {
+    width: 100%;
+    max-width: 950px;
+    margin: 20px auto 10px;
+
+}
+
+.MessageFlash {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hideFlashMessage {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 6px 10px;
+}
+
+.successMessageFlash {
+    color: var(--successColorText);
+    background-color: var(--successBackgroundColor);
+    text-align: center;
+}
+
+.errorMessageFlash {
+    color: var(--errorTextColor);
+    background-color: var(--errorBackgroundColor);
+    text-align: center;
+}
+
+.infoMessageFlash {
+    color: var(--infoColorText);
+    background-color: var(--infoBackgroundColor);
+    text-align: center;
+}
+
+/*File d'Ariane : */
+.lastCatBreadcrumb{
+    display: none
+}
+@media screen and (min-width: 1080px) {
+    /*File d'Ariane : */
+    .lastCatBreadcrumb{
+        display: initial;
+    }
+    button{
+        cursor: pointer;
+    }
+    .burgerMenu {
+        display: none;
+    }
+
+    .headerDivSearch {
+        display: none;
+    }
+
+    .headerTop_left {
+        width: 25%;
+    }
+
+    .menuDesktop {
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+        width: 520px;
+        /*width: 50%;*/
+        position: relative;
+    }
+
+    .headerTop_right {
+        width: 25%;
+    }
+
+    .logoHeader {
+        margin-left: 15px;
+    }
+
+    .menuDesktop > ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .headerTop_right span {
+        display: block;
+    }
+
+    .headerTop_right i {
+        font-size: 28px;
+    }
+
+    .sousMenuDesktop {
+        position: absolute;
+        top: 70px;
+        z-index: 100;
+        transition: 0.3s;
+        overflow: hidden;
+        max-height: 0;
+        text-align: start;
+
+    }
+
+    .menuDesktop ul li {
+        list-style: none;
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+
+    }
+
+    .menuDesktop > ul > li {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .menuDesktop ul li a {
+        color: var(--white1);
+        text-decoration: none;
+        transition: .2s;
+    }
+
+    .menuDesktop > ul > li::after {
+        font-family: FontAwesome;
+        content: "\f078";
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .sousMenuDesktop {
+        background-color: var(--backgroundPrimary1);
+        padding-left: 0;
+        width: 250px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .sousMenuDesktop ul {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .sousMenuDesktop li {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .sousMenuDesktop li:hover > a {
+        color: var(--blueLight1);
+    }
+
+    .menuDesktop ul li:hover .sousMenuDesktop {
+        max-height: 500px;
+    }
+
+    .headerTop_right {
+        position: relative;
+        font-size: 18px;
+    }
+
+    .profilMenuDesktop {
+        background-color: var(--backgroundPrimary2);
+        position: absolute;
+        bottom: -85px;
+        right: 108px;
+        width: 150px;
+        border-radius: 10px;
+        z-index: 100;
+    }
+    .profilMenuDesktopActive{
+        display: block;
+    }
+
+    .profilMenuDesktop hr {
+        margin: 0
+    }
+
+    .profilMenuDesktop ul {
+        padding-left: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .profilMenuDesktop li {
+        list-style: none;
+        padding: 10px 3px;
+    }
+
+    .profilMenuDesktop a:hover {
+        color: var(--blueLight1);
+    }
+
+    .headerSearchDesktop {
+        background-color: var(--backgroundPrimary2);
+        /*border-radius: 50px;*/
+        /*color: black;*/
+        padding: 15px;
+        font-size: 18px;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        border: 0;
+        border-radius: 50px;
+        background-image: url(../images/logos/menu/search.svg);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: 50%;
+        outline: none;
+        transition: .3s;
+    }
+
+    .deleteSearchDesktop {
+        position: absolute;
+        right: 15px;
+        z-index: 100;
+        cursor: pointer;
+        display: none;
+
+    }
+
+    .headerCroixSearchDesktop {
+        position: absolute;
+        right: -25px;
+        z-index: 100;
+        font-size: 25px;
+        color: rgba(245, 245, 245);
+        cursor: pointer;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+        display: none;
+    }
+
+    .headerSearchDesktopActive {
+        width: 100%;
+        cursor: text;
+        background-image: none;
+        color: var(--white1);
+    }
+
+    .headerSearchDesktopActive::placeholder {
+        color: var(--white1);
+        opacity: 0.7;
+    }
+
+    .headerTop_right {
+        height: 100%;
+        /*width: 200px;*/
+        justify-content: end;
+
+
+    }
+
+    .headerTop_right div {
+        padding: 0;
+    }
+
+    .headerTop_right_profil,
+    .headerTop_right_cart {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s;
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .headerTop_right_profil:hover,
+    .headerTop_right_cart:hover {
+        color: var(--blueLight1);
+    }
+    .productsQuantity{
+        right: 28px;
+        top: 7px;
+        font-size: 24px;
+
+    }
+    .headerTop_right_cart span:first-of-type {
+        display: flex;
+    }
+
+
+
+}
+

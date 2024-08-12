@@ -1,0 +1,10 @@
+form{
+    text-align: center;
+    width: 310px;
+}
+
+@media screen and (min-width: 600px) {
+    form{
+        width: 500px;
+    }
+}

@@ -1,0 +1,35 @@
+<div class="headerMenuOverlay">
+    {% for key1, value1 in globalDataCategory %}
+        <div class="accordionItem">
+            <div class="accordion-item-header">
+                {{ key1 }}
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <ul class="sousMenuAccordion">
+                        {% for key2, value2 in value1.childrenCategory %}
+                            <li>
+                                {% if value2.childrenCategory is not empty %}
+                                    <a class="accordionCatMain"
+                                       href="#">{{ key2 }}</a>
+
+                                    <ul>
+                                        {% for key3, value3 in value2.childrenCategory %}
+                                            <li>
+                                                <a href="{{ path('app_productsList', {slug:value3.slug}) }}">{{ key3 }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <a class="accordionCatMain"
+                                       href="{{ path('app_productsList', {slug:value2.slug}) }}"
+                                    >{{ key2 }}</a>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

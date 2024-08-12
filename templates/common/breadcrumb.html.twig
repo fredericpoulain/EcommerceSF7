@@ -1,0 +1,18 @@
+<div>
+    {#    {{ dump(breadcrumb) }} #}
+    <nav class="arianeNav">
+        <ul>
+            <li><a href="{{ path('app_home') }}">Accueil</a></li>
+            {% for data in dataBreadcrumb %}
+                {% if loop.last %}
+                    <li class="lastCatBreadcrumb"><i class="fa-solid fa-caret-right"></i><a
+                                href="{{ path(data.path, { slug: data.slug }) }}">{{ data.nom }}</a></li>
+                {% else %}
+                    <li><i class="fa-solid fa-caret-right"></i><a
+                                href="{{ path(data.path, { slug: data.slug }) }}">{{ data.nom }}</a></li>
+                {% endif %}
+
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

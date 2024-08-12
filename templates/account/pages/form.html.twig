@@ -1,0 +1,55 @@
+{% extends 'account/index.html.twig' %}
+{#{% block stylesheets %}#}
+{#    <link rel="stylesheet" href="{{ asset('assets/css/account.css') }}">#}
+{#    <link rel="stylesheet" href="{{ asset('assets/css/formPage.css') }}">#}
+{#{% endblock %}#}
+{% block bodyAccount %}
+    <div class="containerFormPage">
+        <div class="titleBloc">
+            <h1>{{ title }}</h1>
+        </div>
+        {% if editBilling is defined and editBilling %}
+            <div>
+                {{ form_start(formAddressBilling) }}
+                {{ form_row(formAddressBilling.firstname) }}
+                {{ form_row(formAddressBilling.lastname) }}
+                {{ form_row(formAddressBilling.address) }}
+{#                {{ form_row(formAddressBilling.additional) }}#}
+                {{ form_row(formAddressBilling.zipcode) }}
+                {{ form_row(formAddressBilling.city) }}
+
+                <div>
+                    <button type="submit">{{ action }}</button>
+                </div>
+                {{ form_end(formAddressBilling) }}
+            </div>
+        {% else %}
+            <div>
+                {{ form_start(formAddress) }}
+                {{ form_row(formAddress.firstname) }}
+                {{ form_row(formAddress.lastname) }}
+                {{ form_row(formAddress.address) }}
+{#                {{ form_row(formAddress.additional) }}#}
+                {{ form_row(formAddress.zipcode) }}
+                {{ form_row(formAddress.city) }}
+                {{ form_row(formAddress.phone) }}
+                {#                Si le User n'a pas encore d'adresse, par défaut se sera une adresse principale #}
+                {% if checkboxActivated == false %}
+                    {{ form_row(formAddress.isMain, {'attr': {'disabled': true, 'checked': true} }) }}
+                {% else %}
+                    {{ form_row(formAddress.isMain) }}
+                {% endif %}
+                <div>
+                    <button type="submit">{{ action }}</button>
+                </div>
+                {{ form_end(formAddress) }}
+            </div>
+        {% endif %}
+        <div class="blocBtnRetourFormAddress">
+            <a href="{{ path('app_addresses') }}">
+                <i class="fa-solid fa-arrow-left"></i> Retour
+            </a>
+        </div>
+
+    </div>
+{% endblock %}

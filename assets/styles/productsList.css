@@ -1,0 +1,155 @@
+.mainPage{
+    padding: 8px;
+}
+.pageTitle{
+    text-align: center;
+}
+.pageTitle h1 {
+    margin-left: 10px;
+    font-size: 28px;
+}
+.divFormSearchPage{
+    margin-bottom: 20px;
+}
+.searchPageFormContent {
+    display: flex;
+}
+
+.searchPageFormContent {
+    display: flex;
+}
+
+.searchPageFormContent input {
+    border: none;
+    outline: none;
+    background-color: var(--backgroundPrimary1);
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    width: 220px;
+    color: var(--white1);
+}
+
+.searchPageFormContent input::placeholder {
+    color: var(--grey1);
+}
+
+.searchPageFormContent button {
+    border: none;
+    background-color: var(--backgroundPrimary1);
+    color: var(--white1);
+    border-radius: 0 8px 8px 0;
+}
+
+/* **** list products **** */
+.listLinkProductPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.blocLinkProduct{
+    margin-bottom: 20px;
+    background-color: var(--backgroundPrimary2);
+    border-radius: 5px;
+    padding: 10px;
+    /*max-width: 650px;*/
+}
+.linkProductPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkProductPageDetails{
+    padding-left: 10px;
+    max-width: 80%;
+}
+.linkProductPageImage img{
+    width: 70px;
+    height: 70px;
+}
+.productName{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+
+}
+.productDesc{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 10px 0 auto;
+}
+.PriceStock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.PriceStock p:nth-child(1){
+    margin: 0;
+    color: var(--red2);
+    font-size: 22px ;
+    font-weight: bold;
+}
+.PriceStock p:nth-child(2){
+    margin: 0;
+    color: var(--green2);
+    font-size: 18px ;
+    font-weight: bold;
+}
+
+.paginator{
+    text-align: center;
+}
+.paginator button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--backgroundPrimary2);
+    color: var(--white1);
+
+    font-size: 18px;
+}
+.pagination button{
+    /*border-radius: 5px;*/
+
+}
+.pagination a{
+    display: inline-block;
+    width: 35px;
+    margin-right: 4px;
+    margin-left: 4px;
+    /*padding: 5px 10px;*/
+}
+.pagination button{
+    width: 45px;
+}
+.pagination .current{
+    border-color: var(--backgroundPrimary2);
+    color: var(--white1);
+}
+
+
+
+@media screen and (min-width: 500px){
+    .blocLinkProduct{
+        width: 90%;
+    }
+
+    .linkProductPageDetails{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .blocLinkProduct{
+        width: 50%;
+    }
+
+    .linkProductPageDetails{
+        width: 80%;
+    }
+    .paginator button{
+        font-size: 26px;
+    }
+}

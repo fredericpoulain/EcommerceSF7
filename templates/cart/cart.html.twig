@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+{% block importmap %}
+    {{ importmap(['app', 'cart']) }}
+{% endblock %}
+{% block title %}Hello CartController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="titleBloc">
+            <h1>Mon panier</h1>
+        </div>
+        <section>
+
+            {% if dataCart is not empty %}
+                <div class="productsList">
+                    <ul>
+                        {% for productData in dataCart %}
+                            <li>
+                                <div class="imageProduct">
+                                    {#                                    {% for image in productData.product.images %} #}
+                                    {#                                        {% if loop.first %} #}
+                                    {#                                            {{ image.name }} #}
+                                    {#                                            <img src="path/{{ image.name }}" alt="Image de l'article"> #}
+                                    {#                                        {% endif %} #}
+                                    {#                                    {% endfor %} #}
+                                    <img src="https://placehold.co/60x60" alt="Image de l'article">
+                                </div>
+                                <div class="infosProduct">
+                                    <div class="infosProductTitle">
+                                        <h4>{{ productData.product.name }}</h4>
+                                        {% if  productData.product.stock == 0 %}
+                                            <span>Rupture</span>
+                                        {% elseif productData.product.stock < 5 %}
+                                            <span>Quantité limité</span>
+                                        {% else %}
+                                            <span>En stock</span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="quantitySelect">
+                                            <a href="{{ path('app_cart_remove', {id:productData.product.id}) }}"
+                                               class="quantityLink">
+                                                <button><i class="fa-solid fa-minus"></i></button>
+                                            </a>
+                                            <span class="quantityText">{{ productData.quantity }}</span>
+                                            <a href="{{ path('app_cart_add', {id:productData.product.id}) }}"
+                                               class="quantityLink">
+                                                <button><i class="fa-solid fa-plus"></i></button>
+                                            </a>
+                                        </div>
+                                        <div class="quantityPrice">
+                                            <span>{{ (productData.product.price * productData.quantity) / 100 }} €</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delete">
+                                    <a href="{{ path('app_cart_delete', {id:productData.product.id}) }}"><i
+                                                class="fa-solid fa-xmark"></i></a>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    {% if app.user %}
+                        {% if app.user.shippingAddresses is not empty %}
+                        <div class="addresses">
+                            <div class="shipping">
+                                <h2>Livraison</h2>
+
+                                <h5>{{ shippingAddress.firstname }}&nbsp;{{ shippingAddress.lastname }}</h5>
+                                <p>
+                                    <span>{{ shippingAddress.address }}</span><br>
+                                    <span>{{ shippingAddress.zipcode }}&nbsp;{{ shippingAddress.city }}</span><br>
+                                    <span>{{ shippingAddress.phone ? shippingAddress.phone : '' }}</span><br>
+                                </p>
+                            </div>
+                            <div class="billing">
+                                <h2>Facturation</h2>
+                                <h5>{{ billingAddress.firstname }}&nbsp;{{ billingAddress.lastname }}</h5>
+                                <p>
+                                    <span>{{ billingAddress.address }}</span><br>
+                                    <span>{{ billingAddress.zipcode }}&nbsp;{{ billingAddress.city }}</span><br>
+                                    <span>{{ billingAddress.phone ? billingAddress.phone : '' }}</span><br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blocButtonAddresses">
+                            <a class="modifyAddresses" href="{{ path('app_addresses') }}">
+                                Modifier les adresses
+                            </a>
+                        </div>
+                        {% else %}
+                            <div class="blocButtonAddresses">
+                                <a class="modifyAddresses" href="{{ path('app_addresses') }}">
+                                    Ajouter une adresse
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+
+                </div>
+                <div class="cartSummary">
+                    <div class="totalPrice">
+                        <h4>Total : &nbsp;<span>{{ total / 100 }} €</span></h4>
+                        <h6>Dont TVA : &nbsp;<span>{{ (total / 100) * 0.20 }} €</span></h6>
+                    </div>
+                    <div class="placeOrder">
+                        {% if app.user %}
+                            <a href="{{ path('app_stripe_session') }}">
+                                Passer commande
+                            </a>
+                        {% else %}
+                            <a href="{{ path('app_login') }}">
+                                Se connecter
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% else %}
+                <div class="titleBloc">
+                    <h3>Panier vide</h3>
+                </div>
+            {% endif %}
+        </section>
+    </div>
+
+{% endblock %}

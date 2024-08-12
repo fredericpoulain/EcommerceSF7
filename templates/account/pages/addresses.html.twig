@@ -1,0 +1,114 @@
+{% block importmap %}
+    {{ importmap(['app', 'account', 'deleteAddress']) }}
+{% endblock %}
+{% extends 'account/index.html.twig' %}
+{% block bodyAccount %}
+<div class="accountAddress">
+    <div>
+        <h1>Mes adresses</h1>
+    </div>
+    <div class="addressInfos" >
+        <div>
+            <h2 >Adresse préférée</h2>
+            <hr >
+            {% if mainAddress %}
+                <div class="favoriteAddress">
+                    <h5>{{ mainAddress.user.firstname ~ ' ' ~ mainAddress.user.lastname }}</h5>
+                    <p>
+                        <span>{{ mainAddress.address }}</span><br>
+                        <span>{{ mainAddress.zipcode ~ ' ' ~ mainAddress.city }}</span><br>
+{#                        {% if mainAddress.additional is not null %}<span>{{ mainAddress.additional }}</span><br>{% endif %}#}
+                        {% if mainAddress.phone is not null %}<span>{{ mainAddress.phone }}</span><br>{% endif %}
+                    </p>
+                    <a href="{{ path('app_edit_address', {id: mainAddress.id}) }}" >
+                        <button class="btnEditAddress" type="button">
+                            Modifier
+                        </button>
+                    </a>
+                    <button class="btnDeleteAddress" type="button" data-deleted = {{ mainAddress.id}}>
+                        Supprimer
+                    </button>
+                </div>
+            {% else %}
+                Aucunes adresses enregistrées.
+            {% endif %}
+        </div>
+        <div >
+            <h2>Adresse de facturation</h2>
+            <hr >
+            {% if billingAddress %}
+                <div class="billingAddress">
+                        <h5 >{{ billingAddress.user.firstname ~ ' ' ~ billingAddress.user.lastname }}</h5>
+                        <p >
+                            <span>{{ billingAddress.address }}</span><br>
+                            <span>{{ billingAddress.zipcode ~ ' ' ~ billingAddress.city }}</span>
+                        </p>
+                        <a href="{{ path('app_edit_billing', {id: billingAddress.id}) }}" >
+                            <button class="btnEditBillingAddress" type="button">
+                                Modifier
+                            </button>
+                        </a>
+
+                </div>
+            {% else %}
+                Aucunes adresses de facturation enregistrées.
+            {% endif %}
+        </div>
+    </div>
+
+    <h2>Mes autres adresses</h2>
+    <hr>
+    {% if secondaryAddresses %}
+        <div class="containerOtherAddress" >
+            {% for address in secondaryAddresses %}
+                <div class="otherAddress">
+                    <div>
+                        <h5 >{{ address.user.firstname ~ ' ' ~ address.user.lastname }}</h5>
+                        <p>
+                            <span>{{ address.address }}</span><br>
+                            <span>{{ address.zipcode ~ ' ' ~ address.city }}</span><br>
+{#                            {% if address.additional is not null %}<span>{{ address.additional }}</span><br>{% endif %}#}
+                            {% if address.phone is not null %}<span>{{ address.phone }}</span><br>{% endif %}
+
+                        </p>
+                        <a href="{{ path('app_edit_address', {id: address.id}) }}">
+                            <button class="btnEditOtherAddress" type="button">
+                                Modifier
+                            </button>
+                        </a>
+                        <button class="btnDeleteOtherAddress" type="button" data-deleted = {{ address.id }} >
+                            Supprimer
+                        </button>
+                    </div>
+                    <div class="toggleAddress">
+                        <a href="{{ path('app_toggle_address', {id: address.id}) }}" >
+                            <button class="btnToggleAddress" type="button">
+                                Choisir cette adresse
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+        </div>
+    {% else %}
+        Aucunes adresses enregistrées.
+    {% endif %}
+    <div class="accountAddressAddLink">
+        <a href="{{ path('app_add_address') }}" >Ajouter une adresse</a>
+    </div>
+    <div class="overlayConfirmDeleteAddress">
+        <div class="alertConfirmDeleteAddress">
+            <div>
+                <p>Êtes-vous certain de vouloir supprimer cette adresse ?</p>
+            </div>
+            <div>
+                <a><button type="button" class="btnConfirmDeleteAddress" >Confirmer la suppression</button></a>
+                <button type="button" class="btnCancelDeleteAddress" >Annuler</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

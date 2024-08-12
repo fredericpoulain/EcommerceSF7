@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block importmap %}
+    {{ importmap(['app', 'account']) }}
+{% endblock %}
+{% block title %}Mon compte{% endblock %}
+
+{% block body %}
+    <div class="accountMain">
+        <div class="accountMenu">
+            <div class="headerMenuAccount">
+                <span>Mon compte</span>
+                <button>Menu</button>
+            </div>
+            <hr>
+            <ul class="bodyMenuAccount">
+                <span class="menuAccountCloseMark"><i class="fa-solid fa-xmark"></i></span>
+                <li>
+                    <a href="{{ path('app_informations') }}" >
+                        <i class="fa-solid fa-user me-2"></i> <span>Mes informations</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="{{ path('app_order_account') }}" >
+                        <i class="fa-solid fa-bag-shopping me-2"></i> <span>Commandes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_addresses') }}" >
+                        <i class="fa-solid fa-address-book me-2"></i><span>Mes adresses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_favourites') }}" >
+                        <i class="fa-solid fa-heart me-2"></i><span>Mes favoris</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_vouchers') }}" >
+                        <i class="fa-solid fa-gift me-2"></i><span>Bons d'achat et Avoirs</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="accountContent">
+            {% block bodyAccount %}{% endblock %}
+        </div>
+
+    </div>
+{% endblock %}

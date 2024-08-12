@@ -1,0 +1,83 @@
+{# default Sliding pagination control implementation #}
+{% if pageCount > 1 %}
+    <div class="pagination">
+                {% if first is defined and current != first %}
+                    <span class="first">
+                        <a href="{{ path(route, query|merge({(pageParameterName): first})) }}"><button><i class="fa-solid fa-backward-fast"></i></button></a>
+                    </span>
+                {% endif %}
+
+        {% if previous is defined %}
+
+            <a rel="prev" href="{{ path(route, query|merge({(pageParameterName): previous})) }}">
+                <button class="previous"><i class="fa-solid fa-caret-left"></i></button>
+            </a>
+
+        {% endif %}
+
+        {% for page in pagesInRange %}
+            {% if page != current %}
+
+                <a href="{{ path(route, query|merge({(pageParameterName): page})) }}">
+                    <button class="page">{{ page }}</button>
+                </a>
+
+            {% else %}
+                <button class="current">{{ page }}</button>
+            {% endif %}
+        {% endfor %}
+
+        {% if next is defined %}
+
+            <a rel="next" href="{{ path(route, query|merge({(pageParameterName): next})) }}">
+                <button class="next"><i class="fa-solid fa-caret-right"></i></button>
+            </a>
+
+        {% endif %}
+
+                {% if last is defined and current != last %}
+                    <span class="last">
+                        <a href="{{ path(route, query|merge({(pageParameterName): last})) }}"><button><i class="fa-solid fa-forward-fast"></i></button></a>
+                    </span>
+                {% endif %}
+    </div>
+{% endif %}
+
+{# default Sliding pagination control implementation #}
+{# default Sliding pagination control implementation #}
+
+
+{#{% if pageCount > 1 %}#}
+{#    <div class="pagination">#}
+{#        {% set maxButtons = 5 %}#}
+{#        {% set startPage = current - (maxButtons // 2) %}#}
+{#        {% set endPage = startPage + maxButtons - 1 %}#}
+
+{#        {% if previous is defined %}#}
+{#            <a rel="prev" href="{{ path(route, query|merge({(pageParameterName): previous})) }}">#}
+{#                <button class="previous">&lt;</button>#}
+{#            </a>#}
+{#        {% endif %}#}
+
+{#        {% for page in pagesInRange %}#}
+{#            {% if page < startPage or page > endPage %}#}
+{#                #}{# Skip this iteration if the page is not within the range to display #}
+{#            {% else %}#}
+{#                {% if page != current %}#}
+{#                    <a href="{{ path(route, query|merge({(pageParameterName): page})) }}">#}
+{#                        <button class="page">{{ page }}</button>#}
+{#                    </a>#}
+{#                {% else %}#}
+{#                    <button class="current">{{ page }}</button>#}
+{#                {% endif %}#}
+{#            {% endif %}#}
+{#        {% endfor %}#}
+
+{#        {% if next is defined %}#}
+{#            <a rel="next" href="{{ path(route, query|merge({(pageParameterName): next})) }}">#}
+{#                <button class="next">&gt;</button>#}
+{#            </a>#}
+{#        {% endif %}#}
+{#    </div>#}
+{#{% endif %}#}
+

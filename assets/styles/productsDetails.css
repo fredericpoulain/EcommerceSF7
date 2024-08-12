@@ -1,0 +1,133 @@
+.container{
+    max-width: 800px ;
+}
+.titleBloc{
+    text-align: center;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 10px auto;
+}
+.headerProduct{
+    width: 100%;
+    text-align: center;
+}
+
+.productName{
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.firstImageProduct{
+}
+.firstImageProduct img{
+    max-width: 100%;
+    height: auto;
+    /*width: 70px;*/
+    /*height: 70px;*/
+}
+.bodyProduct{
+    margin-top: 20px;
+}
+.productDesc{
+
+}
+.PriceStock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.PriceStock p:nth-child(1){
+    margin: 0;
+    color: var(--red2);
+    font-size: 22px ;
+    font-weight: bold;
+}
+.PriceStock p:nth-child(2){
+    margin: 0;
+    color: var(--green2);
+    font-size: 18px ;
+    font-weight: bold;
+}
+.productFooter{
+    margin: 20px auto;
+}
+.productFooter button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--backgroundPrimary1);
+    color: var(--white1);
+    padding: 5px 28px;
+    font-size: 26px;
+}
+/* ***** SLIDER ******/
+.slider {
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    margin: 30px auto;
+    /*padding: 8px;*/
+    /*width: 800px;*/
+
+}
+.slider li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+.glide__arrow--left {
+    left: 1em;
+}
+
+.glide__arrow--right {
+    right: 1em;
+}
+.commentBloc{
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    /*padding: 10px;*/
+    border: solid 1px var(--backgroundPrimary1);
+}
+.commentHeader{
+    background-color: var(--backgroundPrimary1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.commentHeader >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.commentBody{
+    padding: 10px;
+}
+@media screen and (min-width: 500px){
+    .product{
+        width: 90%;
+    }
+
+    .linkProductPageDetails{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1080px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

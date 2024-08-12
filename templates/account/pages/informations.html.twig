@@ -1,0 +1,29 @@
+{% extends 'account/index.html.twig' %}
+{% block bodyAccount %}
+    <div class="">
+        <div class="titleBloc">
+            <h1>Mes informations</h1>
+        </div>
+        <div class="formInfosUser">
+            {{ form_start(formInfosUser) }}
+            {{ form_row(formInfosUser.firstname) }}
+            {{ form_row(formInfosUser.lastname) }}
+            {{ form_row(formInfosUser.email) }}
+            <div class="">
+                <button class="" type="submit">Valider</button>
+
+            </div>
+            {{ form_end(formInfosUser) }}
+        </div>
+        <div class="formPassword">
+            {{ form_start(formPassword) }}
+            {{ form_row(formPassword.oldPassword) }}
+            {{ form_row(formPassword.newPassword) }}
+            <div class="">
+                <button class="" type="submit">Valider</button>
+
+            </div>
+            {{ form_end(formPassword) }}
+        </div>
+    </div>
+{% endblock %}

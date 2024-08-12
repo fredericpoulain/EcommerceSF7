@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+{% block importmap %}
+    {{ importmap(['app', 'home']) }}
+{% endblock %}
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <div class="homeTitle">
+        <h1>Meilleures ventes</h1>
+    </div>
+    <section>
+        <div class="prodList">
+            {#                boucle #}
+            {% for product in randProducts %}
+                <div class="prodCard">
+                    <div>
+                        <img src="{{ asset('images/products/product-thumb.png') }}" alt="Image d'un produit"/>
+                    </div>
+                    <div>
+                        <h5>{{ product.name }}</h5>
+                        <p>{{ product.price / 100}} €</p>
+                    </div>
+                    <div>
+                        <a href="{{ path('app_products', {slug:product.slug}) }}"><button>Détail</button></a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+    <section class="sectionHomeCardsCategorys">
+
+        <div class="titleCategorys">
+            <h1>Catégories</h1>
+        </div>
+        <div class="listcategorys">
+            {% for key1, value1 in globalDataCategory %}
+                <div class="blocCardCategory">
+                    <a href="{{ path('app_categorys', {slug:value1.slug}) }}">
+                        <div class="cardCategorys">
+                            <div class="cardCategoryHeader">
+                                <img src="{{ asset('images/categories/category-thumb.png') }}" alt="Image d'une catégories"/>
+                            </div>
+                            <div class="cardCategoryTitle">
+                                <h3>{{ key1 }}</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+
+
+
+
+    </section>
+{% endblock %}

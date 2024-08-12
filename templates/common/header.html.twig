@@ -1,0 +1,97 @@
+<header>
+    <div class="headerTop">
+        <div class="headerTop_left">
+            <div class="burgerMenu">
+                <span></span>
+            </div>
+            <div class="logoHeader">
+                <a class="" href="{{ path('app_home') }}">E-COM</a>
+            </div>
+            {% include('common/menu/navMobile.html.twig') %}
+
+        </div>
+        {% include('common/menu/navDesktop.html.twig') %}
+        <div class="headerTop_right">
+            <div class="headerTop_right_profil">
+                <i class="fa-solid fa-user"></i>
+                <span>Mon compte</span>
+
+            </div>
+            <div class="profilMenuDesktop">
+                <ul>
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <a href="{{ path('app_admin') }}">
+                                <li><i class="fa-solid fa-lock"></i>Dashboard</li>
+                            </a>
+                            <hr>
+                        {% endif %}
+                        <a href="{{ path('app_informations') }}">
+                            <li>Mon compte</li>
+                        </a>
+                        <hr>
+                        <a href="{{ path('app_logout') }}">
+                            <li>Déconnexion</li>
+                        </a>
+                    {% else %}
+                        <a href="{{ path('app_login') }}">
+                            <li>Connexion</li>
+                        </a>
+                        <hr>
+                        <a href="{{ path('app_register') }}">
+                            <li>Inscription</li>
+                        </a>
+                    {% endif %}
+                </ul>
+            </div>
+
+
+            <a href="{{ path('app_cart_index') }}" class="headerTop_right_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mon panier</span>
+                {% if productsQuantity %}
+                    <span class="productsQuantity">
+                    {{ productsQuantity }}
+                    </span>
+                {% endif %}
+            </a>
+
+            <div class="headerDivSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="headerSearchOverlay">
+                <div class="divCloseHeaderSearch"><i class="fa-solid fa-xmark"></i></div>
+                <p>Rechercher un produit</p>
+                <form action="" method="GET">
+                    <div class="divInputHeaderSearch">
+                        <input type="text" required name="produit" id="" class="inputHeaderSearch"
+                               placeholder="Votre recherche...">
+                        <span class="searchDeleteInputMobile"><i class="fa-solid fa-delete-left"></i></span>
+                    </div>
+                    <div class="divButtonSearchOverlay">
+                        <button type="submit">Rechercher</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="profilMenuMobile">
+        <div class="divCloseprofilMenu"><i class="fa-solid fa-xmark"></i></div>
+        <ul>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+                <li><a href="{{ path('app_informations') }}">Mon compte</a>
+                {% if is_granted('ROLE_ADMIN') %}
+                    &nbsp; | &nbsp; <a href="{{ path('app_admin') }}">Dashboard</a>
+                {% endif %}
+                </li>
+                <hr>
+                <li><a href="{{ path('app_logout') }}">Déconnexion</a></li>
+            {% else %}
+                <li><a href="{{ path('app_login') }}">Connexion</a></li>
+                <hr>
+                <li><a href="{{ path('app_register') }}">Inscription</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</header>

@@ -1,0 +1,36 @@
+<div class="menuDesktop">
+    <ul>
+        {% for key1, value1 in globalDataCategory %}
+            <li>
+                <a href="#">{{ key1 }}</a>
+                <ul class="sousMenuDesktop">
+                    {% for key2, value2 in value1.childrenCategory %}
+                        <li>
+                            {% if value2.childrenCategory is not empty %}
+                                <a href="#">{{ key2 }}</a>
+
+                                <ul>
+                                    {% for key3, value3 in value2.childrenCategory %}
+                                        <li>
+                                            <a href="{{ path('app_productsList', {slug:value3.slug}) }}">{{ key3 }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% else %}
+                                <a href="{{ path('app_productsList', {slug:value2.slug}) }}">{{ key2 }}</a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+
+    </ul>
+    <input class="headerSearchDesktop"/>
+    <div class="deleteSearchDesktop">
+        <i class="fa-solid fa-delete-left"></i>
+    </div>
+    <div class="headerCroixSearchDesktop">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>

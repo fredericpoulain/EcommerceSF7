@@ -1,0 +1,13 @@
+<div class="blocMessageFlash">
+    {% for class, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="MessageFlash {{ class }}">
+                        <span class="hideFlashMessage">
+                            <i class="fa-solid fa-x"></i>
+                        </span>
+                <div>{{ message|raw }}</div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
+

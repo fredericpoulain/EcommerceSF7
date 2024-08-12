@@ -1,0 +1,52 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    tfoot th {
+        background-color: #e8e8e8;
+    }
+</style>
+
+<h1>Bonjour {{ firstname }},</h1>
+<p>Votre commande a été traitée avec succès. Voici les détails :</p>
+<table>
+    <thead>
+    <tr>
+        <th>Article</th>
+        <th>Prix unitaire</th>
+        <th>Quantité</th>
+        <th>Sous-total</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in orderDetails.items %}
+        <tr>
+            <td>{{ item.product }}</td>
+            <td>{{ item.price / 100 }} € </td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.subtotal / 100 }} €</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="3">Total</th>
+        <th>{{ orderDetails.total / 100 }} €</th>
+    </tr>
+    </tfoot>
+</table>
+<p>Merci pour votre achat !</p>

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block importmap %}
+    {{ importmap(['app', 'login']) }}
+{% endblock %}
+{% block title %}Mot de pass oublié{% endblock %}
+
+{% block body %}
+    <div class="containerFormPage">
+        <div class="titleBloc">
+            <h1>Mot de passe oublié</h1>
+            <h5><a href="{{ path('app_register') }}">Nouveau client ?</a></h5>
+        </div>
+        <div>
+            {{ form_start(form) }}
+            {{ form_row(form.email) }}
+            <button type="submit">Valider</button>
+            {{ form_end(form) }}
+            <div >
+                <a href="{{ path('app_login') }}">Je m'en souviens finalement</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

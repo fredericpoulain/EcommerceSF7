@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+{% block importmap %}
+    {{ importmap(['app', 'home']) }}
+{% endblock %}
+{% block title %}Catégories{% endblock %}
+
+{% block body %}
+    {% include 'common/breadcrumb.html.twig' %}
+<section class="sectionHomeCardsCategorys">
+    <div class="titleCategorys">
+        <h1>{{ category.name }}</h1>
+    </div>
+
+    <div class="">
+
+        {% for subCat in category.categories %}
+            <div class="blocCardCategory">
+{#                <a href="{{ path('app_productsList', {slug:subCat.slug}) }}">#}
+                <a href="{{ path('app_categorys', {slug:subCat.slug}) }}">
+                    <div class="cardCategorys">
+                        <div class="cardCategoryHeader">
+                            <img src="{{ asset('images/categories/category-thumb.png') }}"
+                                 alt="Image d'une catégories"/>
+                        </div>
+                        <div class="cardCategoryTitle">
+                            <h3>{{ subCat.name }}</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        {% endfor %}
+
+    </div>
+</section>
+{% endblock %}
