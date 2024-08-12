@@ -54,6 +54,11 @@ class SecurityController extends AbstractController
         UsersRepository $usersRepository,
         MailerInterface $mailer
     ): Response {
+
+        $this->addFlash('infoMessageFlash', "Le mot de passe du compte de démonstration est : demo");
+        return $this->redirectToRoute('app_addresses');
+        //***********************************************************************************************************
+
         //!pour afficher le formulaire crée depuis le maker, il faut que le controller l'appel !
         //* la méthode createForm() vient de abstractController
         $form = $this->createForm(ResetPassRequestType::class);
@@ -125,6 +130,10 @@ class SecurityController extends AbstractController
         UserPasswordHasherInterface $userPasswordHasherInterface,
         UsersRepository $userRepository
     ){
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Cette page n'est pas accessible");
+        return $this->redirectToRoute('app_addresses');
+        //***********************************************************************************************************
+
 
         //on vérifie si le token du get est présent en bdd
 

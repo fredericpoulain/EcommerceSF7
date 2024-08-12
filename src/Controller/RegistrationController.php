@@ -31,7 +31,8 @@ class RegistrationController extends AbstractController
         Security $security,
         EntityManagerInterface $entityManager): Response
     {
-
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Inscriptions désactivées");
+        return $this->redirectToRoute('app_home');
 
         if ($this->getUser()) {
             return $this->redirectToRoute('app_home');

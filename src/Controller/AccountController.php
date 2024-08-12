@@ -38,11 +38,11 @@ class AccountController extends AbstractController
         Request                     $request,
         EntityManagerInterface      $entityManager,
         UserPasswordHasherInterface $userPasswordHasher,
-//        SendMailService             $mailService,
-//        JWTService                  $jwt,
         UsersRepository              $usersRepository
     ): Response
     {
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Cette page n'est pas accessible");
+        return $this->redirectToRoute('app_addresses');
 
         $user = $this->getUser();
 
@@ -181,6 +181,9 @@ class AccountController extends AbstractController
         BillingAddressesRepository $billingAddressesRepository
     ): Response
     {
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Impossible d'ajouter une adresse");
+        return $this->redirectToRoute('app_addresses');
+
 
         //On considère que par défaut le client n'a pas d'adresse,
         //Donc la checkbox "Enregistrer comme adresse préférée" sera disabled :
@@ -256,6 +259,9 @@ class AccountController extends AbstractController
         ShippingAddressesRepository $shippingAddressesRepository
     ): Response
     {
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Impossible de modifier une adresse");
+        return $this->redirectToRoute('app_addresses');
+
         //par défaut, le client n'a pas encore l'autorisation d'éditer son adresse.
         $permission = false;
         $mainAddress = [];
@@ -329,6 +335,9 @@ class AccountController extends AbstractController
         BillingAddressesRepository $billingAddressesRepository
     ): Response
     {
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Impossible de modifier une adresse");
+        return $this->redirectToRoute('app_addresses');
+
         //On récupère l'adresse à modifier
         $addressBilling = $billingAddressesRepository->find($id);
         if ($addressBilling && $addressBilling->getUser() === $this->getUser()) {
@@ -368,6 +377,10 @@ class AccountController extends AbstractController
         ShippingAddressesRepository $shippingAddressesRepository
     ): Response
     {
+        $this->addFlash('infoMessageFlash', "Version de démonstration ! Impossible de supprimer une adresse");
+        return $this->redirectToRoute('app_addresses');
+        //*****************************************************************************************************
+
         $permission = false;
 
         $arrayAddress = $shippingAddressesRepository->findByUser($this->getUser());

@@ -16,6 +16,8 @@ class ProductsController extends AbstractController
     #[Route('/produits/{slug}', name: 'app_products')]
     public function index(Products $product, Request $request, EntityManagerInterface $entityManager): Response
     {
+        $user = $this->getUser();
+
         $comment = new Comments();
 
         $commentForm = $this->createForm(CommentsType::class, $comment);
@@ -29,6 +31,7 @@ class ProductsController extends AbstractController
             $comment->setText($commentForm->get('text')->getData());
             $entityManager->persist($comment);
             $entityManager->flush();
+            $this->addFlash('successMessageFlash', "Commentaire posté !");
             return $this->redirectToRoute('app_products', ['slug' => $product->getSlug()]);
         }
 

@@ -94,22 +94,26 @@
                         <h3>Ajouter un commentaire</h3>
                     {% else %}
                         <h3>Soyez le premier à ajouter un commentaire !</h3>
+                        <h4><a href="{{ path('app_login') }}">Connexion</a> obligatoire !</h4>
                     {% endif %}
                 </div>
 
-                <div class="formContent">
-                    <div class="alert"><p></p></div>
-                    {{ form_errors(commentForm) }}
-                    {{ form_start(commentForm) }}
-                    {{ form_row(commentForm.title) }}
-                    {{ form_row(commentForm.text) }}
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <div class="formContent">
+                        <div class="alert"><p></p></div>
+                        {{ form_errors(commentForm) }}
+                        {{ form_start(commentForm) }}
+                        {{ form_row(commentForm.title) }}
+                        {{ form_row(commentForm.text) }}
 
 
-                    <div class="btnCommentDiv">
-                        <button type="submit" name="btnSend" class="btnComment">Envoyer</button>
+                        <div class="btnCommentDiv">
+                            <button type="submit" name="btnSend" class="btnComment">Envoyer</button>
+                        </div>
+                        {{ form_end(commentForm) }}
                     </div>
-                    {{ form_end(commentForm) }}
-                </div>
+                {% endif %}
+
             </div>
         </section>
 
