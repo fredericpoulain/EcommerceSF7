@@ -59,6 +59,11 @@ class OrdersController extends AbstractController
     {
         $this->denyAccessUnlessGranted('ROLE_USER');
 
+        //***********************************************************************************************************
+        $this->addFlash('infoMessageFlash', "Site de démonstration ! Les achats sont désactivés");
+        return $this->redirectToRoute('app_addresses');
+        //***********************************************************************************************************
+
         $secretKeyStripe = $this->getParameter('app.secreteKeyStripe');
         \Stripe\Stripe::setApiKey($secretKeyStripe);
         \Stripe\Stripe::setApiVersion('2024-06-20');
