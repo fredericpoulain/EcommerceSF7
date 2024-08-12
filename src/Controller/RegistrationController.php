@@ -31,6 +31,8 @@ class RegistrationController extends AbstractController
         Security $security,
         EntityManagerInterface $entityManager): Response
     {
+
+
         if ($this->getUser()) {
             return $this->redirectToRoute('app_home');
         }
